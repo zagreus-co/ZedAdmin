@@ -5,7 +5,14 @@ module.exports = {
     "./pages/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        theme: {
+          'secondary': "#f8f9ff",
+          'primary': "#5c68ff",
+        }
+      }
+    },
   },
   plugins: [
     require('postcss-import')
