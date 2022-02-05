@@ -20,12 +20,12 @@ body {
 
 aside.sidebar {
     height: 100vh;
-    width: 19vw;
+    width: 290px;
     @apply block fixed top-0 py-6 bg-white shadow-sm;
 
     header {
         @apply flex items-center px-7 mt-1 mr-24;
-        h1 {    
+        h1 { 
             @apply font-bold text-2xl ;
 
             span {
@@ -48,7 +48,9 @@ aside.sidebar {
             li.badge:not(:first-child) {
                 @apply border-t border-gray-100 mt-2 pt-4
             }
-
+            li{
+                @apply relative;
+            }
             li a {
                 @apply block ml-6 py-3 px-3 rounded-md transition duration-200  items-center;
                 ion-icon {
@@ -69,4 +71,8 @@ aside.sidebar {
             }
         }
     }
+}
+
+main {
+    @apply ml-80 mt-7 pr-10;
 }

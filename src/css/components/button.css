@@ -5,3 +5,12 @@
 .btn-success, .btn-green {
     @apply bg-emerald-500 hover:bg-emerald-600 text-white;
 }
+.btn-primary {
+    color: #4d56e0;
+    @apply bg-theme-primary hover:bg-theme-darked-primary text-white;
+}
+
+/* Buttons sizes */
+.btn-lg {
+    @apply px-6 py-4;
+}

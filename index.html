@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#5c68ff" />
         <title>ZedAdmin - Admin Panel template with TailwindCSS</title>
         <link rel="stylesheet" href="dist/css/style.css" />
     </head>
@@ -12,8 +13,7 @@
             <header>
                 <h1>ZedAdmin<span>.</span></h1>
             </header>
-
-            <nav>
+            <nav class="max-h-[85vh] overflow-x-hidden overflow-y-auto">
                 <ul>
                     <li class="badge">Main Menu</li>
                     <li class="active">
@@ -22,42 +22,69 @@
                             Dashboard
                         </a>
                     </li>
-                    <li><a href="#">
-                        <ion-icon name="chatbubble-ellipses"></ion-icon>
-                        Manage Comments
-                    </a></li>
-                    <li><a href="#">
-                        <ion-icon name="create"></ion-icon>
-                        Manage blog
-                    </a></li>
-                    <li><a href="#">
-                        <ion-icon name="settings"></ion-icon>
-                        Manage options
-                    </a></li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="chatbubble-ellipses"></ion-icon>
+                            Manage Comments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="create"></ion-icon>
+                            Manage blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="settings"></ion-icon>
+                            Manage options
+                        </a>
+                    </li>
 
                     <li class="badge">Insights</li>
 
-                    <li><a href="#">
-                        <ion-icon name="bar-chart"></ion-icon>
-                        Analytics
-                    </a></li>
-                    <li><a href="#">
-                        <ion-icon name="notifications"></ion-icon>
-                        Notifications
-                        <span class='numbers-badge'>7</span>
-                    </a></li>
-
+                    <li>
+                        <a href="#">
+                            <ion-icon name="bar-chart"></ion-icon>
+                            Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="notifications"></ion-icon>
+                            Notifications
+                            <span class="numbers-badge">7</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </aside>
 
-        <main class="mt-7 container">
-            <h3>Hello Mehrab!</h3>
+        <main>
+            <header class="flex justify-between items-center w-full">
+                <div class="flex items-center">
+                    <!-- if your user doesnt have any avatar, you can uncomment th code bellow -->
+                    <!-- <span class="bg-theme-primary text-white py-3 px-4 rounded-full">M</span> -->
+                    <img src="dist/img/mehrab.jpg" class="h-14 w-14 rounded-full" alt="User Avatar">
+
+                    <div class="ml-5">
+                        <h4 class="font-bold">Hello Mehrab!</h4>
+                        <small class="text-gray-500">These are stats for your dashboard</small>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-lg btn-primary">+ Add new task</button>
+                </div>
+            </header>
+            
+            <section>
+                
+                
+                
+            </section>
+            
         </main>
 
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        ></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     </body>
 </html>
