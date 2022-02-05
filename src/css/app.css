@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "./components/typography";
+@import "./components/button";
+@import "./variables";
+
+body {
+    background: var(--backgroundColor);
+}
+
+.container {
+    @apply px-40;
+}
