@@ -9,11 +9,22 @@
         <link rel="stylesheet" href="dist/css/style.css" />
     </head>
     <body>
-        <aside class="sidebar left-0">
+
+        <nav class='mobile-navbar'>
+            <button id='mobileMenuBtn' class='text-2xl px-4'>
+                <ion-icon class='mt-2' name="menu-outline"></ion-icon>
+            </button>
+            
             <header>
                 <h1>ZedAdmin<span>.</span></h1>
             </header>
-            <nav class="max-h-[85vh] overflow-x-hidden overflow-y-auto">
+        </nav>
+
+        <aside class="sidebar hidden lg:block left-0">
+            <header>
+                <h1>ZedAdmin<span>.</span></h1>
+            </header>
+            <nav>
                 <ul>
                     <li class="badge">Main Menu</li>
                     <li class="active">
@@ -135,9 +146,9 @@
                 </div>
             </section>
 
-            <!-- Charts section -->
-            <section class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4">
-                <div class="md:col-span-2 lg:col-span-8">
+            <!-- Second section -->
+            <section class="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-4">
+                <div class="lg:col-span-8">
                     <div class="card hover:shadow">
                         <div class="card-header justify-between">
                             <h5 class='font-bold flex items-center'>
@@ -218,6 +229,7 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <!-- ChartJS -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+        <script src='./dist/js/dashboard.js'></script>
         <script src='./dist/js/dashboard-chart.js'></script>
 
     </body>

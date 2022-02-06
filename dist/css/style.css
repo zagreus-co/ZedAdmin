@@ -288,6 +288,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }.left-0{
   left: 0px;
+}.mt-2{
+  margin-top: 0.5rem;
 }.ml-5{
   margin-left: 1.25rem;
 }.mt-6{
@@ -300,10 +302,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.75rem;
 }.mt-1{
   margin-top: 0.25rem;
-}.mt-3{
-  margin-top: 0.75rem;
-}.mt-2{
-  margin-top: 0.5rem;
 }.mt-4{
   margin-top: 1rem;
 }.block{
@@ -314,10 +312,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }.grid{
   display: grid;
+}.hidden{
+  display: none;
 }.h-14{
   height: 3.5rem;
-}.max-h-\[85vh\]{
-  max-height: 85vh;
 }.w-full{
   width: 100%;
 }.w-14{
@@ -334,10 +332,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
-}.overflow-y-auto{
-  overflow-y: auto;
-}.overflow-x-hidden{
-  overflow-x: hidden;
 }.rounded-full{
   border-radius: 9999px;
 }.border{
@@ -348,12 +342,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.bg-theme-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(92 104 255 / var(--tw-bg-opacity));
-}.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }.px-4{
   padding-left: 1rem;
   padding-right: 1rem;
+}.py-3{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }.py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -364,6 +358,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.5rem;
 }.text-center{
   text-align: center;
+}.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }.text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -541,7 +538,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 290px;
     position: fixed;
     top: 0px;
-    display: block;
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     padding-top: 1.5rem;
@@ -566,6 +562,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(92 104 255 / var(--tw-text-opacity));
 }aside.sidebar nav{
   margin-top: 2rem;
+  max-height: 85vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }aside.sidebar nav ul > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
@@ -626,10 +625,40 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(248 249 255 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(92 104 255 / var(--tw-text-opacity));
+}.mobile-navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 2.5rem;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}@media (min-width: 1024px){.mobile-navbar{
+    display: none;
+  }
+}.mobile-navbar header{
+  display: flex;
+  align-items: center;
+}.mobile-navbar header h1{
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}.mobile-navbar header h1 span{
+  font-weight: 900;
+  --tw-text-opacity: 1;
+  color: rgb(92 104 255 / var(--tw-text-opacity));
 }main{
-  margin-left: 20rem;
+  margin-left: 2.5rem;
   margin-top: 1.75rem;
   padding-right: 2.5rem;
+}@media (min-width: 1024px){main{
+    margin-left: 20rem;
+  }
 }.hover\:text-theme-darked-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(77 86 224 / var(--tw-text-opacity));
@@ -637,15 +666,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}@media (min-width: 768px){.md\:col-span-2{
-    grid-column: span 2 / span 2;
-  }.md\:grid-cols-2{
+}@media (min-width: 768px){.md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }@media (min-width: 1024px){.lg\:col-span-8{
     grid-column: span 8 / span 8;
   }.lg\:col-span-4{
     grid-column: span 4 / span 4;
+  }.lg\:block{
+    display: block;
   }.lg\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
