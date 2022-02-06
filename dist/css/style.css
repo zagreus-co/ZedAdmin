@@ -364,6 +364,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
+}.text-base{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }.font-bold{
   font-weight: 700;
 }.text-white{
@@ -538,6 +541,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 290px;
     position: fixed;
     top: 0px;
+    z-index: 50;
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     padding-top: 1.5rem;
@@ -666,7 +670,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}@media (min-width: 768px){.md\:grid-cols-2{
+}@media (min-width: 768px){.md\:block{
+    display: block;
+  }.md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }@media (min-width: 1024px){.lg\:col-span-8{
