@@ -10,7 +10,8 @@ module.exports = {
         theme: {
           'secondary': "#f8f9ff",
           'primary': "#5c68ff",
-          'darked-primary': "#4d56e0"
+          'darked-primary': "#4d56e0",
+          'gray': "#fafafa"
         }
       }
     },

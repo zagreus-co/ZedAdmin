@@ -7,12 +7,25 @@
         h5 {
             @apply text-lg text-gray-600;
         }
-        .icon-area {
-            @apply border p-1 border-gray-200 rounded-full ml-auto;
-        }
     }
 
     .card-body {
         @apply mt-1;
     }
+    .card-footer {
+        @apply mt-1;
+    }
+
+    .icon-area {
+        @apply border p-1 border-gray-200 rounded-full ml-auto;
+    }
+}
+.flex-card {
+    @apply flex;
+}
+.card-bg-gray {
+    background-color: #fafcfe;
+}
+.card-bg-theme {
+    @apply bg-theme-gray;
 }

@@ -288,20 +288,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }.left-0{
   left: 0px;
-}.col-span-8{
-  grid-column: span 8 / span 8;
-}.col-span-4{
-  grid-column: span 4 / span 4;
 }.ml-5{
   margin-left: 1.25rem;
 }.mt-6{
   margin-top: 1.5rem;
-}.ml-auto{
-  margin-left: auto;
-}.mr-1{
-  margin-right: 0.25rem;
 }.mr-2{
   margin-right: 0.5rem;
+}.mb-4{
+  margin-bottom: 1rem;
+}.mr-3{
+  margin-right: 0.75rem;
+}.mt-1{
+  margin-top: 0.25rem;
+}.mt-3{
+  margin-top: 0.75rem;
+}.mt-2{
+  margin-top: 0.5rem;
+}.mt-4{
+  margin-top: 1rem;
+}.block{
+  display: block;
 }.inline-block{
   display: inline-block;
 }.flex{
@@ -324,14 +330,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }.gap-4{
   gap: 1rem;
-}.gap-6{
-  gap: 1.5rem;
+}.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }.overflow-y-auto{
   overflow-y: auto;
 }.overflow-x-hidden{
   overflow-x: hidden;
 }.rounded-full{
   border-radius: 9999px;
+}.border{
+  border-width: 1px;
+}.border-gray-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }.bg-theme-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(92 104 255 / var(--tw-bg-opacity));
@@ -341,10 +354,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.px-4{
   padding-left: 1rem;
   padding-right: 1rem;
-}.pt-1{
+}.py-1{
   padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }.pt-2{
   padding-top: 0.5rem;
+}.text-center{
+  text-align: center;
+}.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }.font-bold{
   font-weight: 700;
 }.text-white{
@@ -356,9 +378,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}.text-gray-300{
+}.text-theme-primary{
   --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+  color: rgb(92 104 255 / var(--tw-text-opacity));
 }p{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -447,15 +469,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}.card .card-header .icon-area{
+}.card .card-body{
+  margin-top: 0.25rem;
+}.card .card-footer{
+  margin-top: 0.25rem;
+}.card .icon-area{
   margin-left: auto;
   border-radius: 9999px;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
   padding: 0.25rem;
-}.card .card-body{
-  margin-top: 0.25rem;
+}.flex-card{
+  display: flex;
+}.card-bg-gray {
+    background-color: #fafcfe;
+}.card-bg-theme{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }.badge {
     font-size: 12px;
     padding: 2px 8px 2px 8px;
@@ -599,20 +630,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 20rem;
   margin-top: 1.75rem;
   padding-right: 2.5rem;
+}.hover\:text-theme-darked-primary:hover{
+  --tw-text-opacity: 1;
+  color: rgb(77 86 224 / var(--tw-text-opacity));
 }.hover\:shadow:hover{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}.hover\:shadow-md:hover{
-  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }@media (min-width: 768px){.md\:col-span-2{
     grid-column: span 2 / span 2;
   }.md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }.md\:grid-cols-12{
-    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }@media (min-width: 1024px){.lg\:col-span-8{
     grid-column: span 8 / span 8;
