@@ -14,11 +14,5 @@
 
     .card-body {
         @apply mt-1;
-        h6 {
-            @apply font-bold inline-block;
-        }
-        span.badge {
-            @apply inline-block;
-        }
     }
 }

@@ -292,6 +292,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 1.25rem;
 }.mt-6{
   margin-top: 1.5rem;
+}.inline-block{
+  display: inline-block;
 }.flex{
   display: flex;
 }.grid{
@@ -427,11 +429,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.25rem;
 }.card .card-body{
   margin-top: 0.25rem;
-}.card .card-body h6{
-  display: inline-block;
-  font-weight: 700;
-}.card .card-body span.badge{
-  display: inline-block;
 }.badge {
     font-size: 12px;
     padding: 2px 8px 2px 8px;
