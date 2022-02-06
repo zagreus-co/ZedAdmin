@@ -137,7 +137,7 @@
 
             <!-- Charts section -->
             <section class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4">
-                <div class="lg:col-span-8">
+                <div class="md:col-span-2 lg:col-span-8">
                     <div class="card hover:shadow">
                         <div class="card-header justify-between">
                             <h5 class='font-bold flex items-center'>
@@ -150,7 +150,7 @@
                             </button>
                         </div>
                         <div class="card-body">
-                            
+                            <canvas id="analyticsChart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -174,6 +174,11 @@
             </section>
         </main>
 
+        <!-- Icons pack -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <!-- ChartJS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+        <script src='./dist/js/dashboard-chart.js'></script>
+
     </body>
 </html>
