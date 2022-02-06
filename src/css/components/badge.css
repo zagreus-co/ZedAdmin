@@ -27,3 +27,6 @@
 .badge-pink {
     @apply bg-pink-100 text-pink-600;
 }
+.badge-theme {
+    @apply bg-theme-primary text-white;
+}
