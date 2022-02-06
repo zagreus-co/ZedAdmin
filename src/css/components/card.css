@@ -1,5 +1,5 @@
 .card {
-    @apply block bg-white py-3 px-4 rounded-md shadow-sm border border-gray-50;
+    @apply block bg-white py-3 px-4 rounded-md shadow-sm border border-gray-50 transition duration-200;
 
     .card-header {
         @apply flex items-center;
