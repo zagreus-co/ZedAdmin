@@ -1,0 +1,29 @@
+.badge {
+    font-size: 12px;
+    padding: 2px 8px 2px 8px;
+    @apply rounded-full align-middle font-bold;
+}
+
+.badge-danger, .badge-error {
+    @apply bg-red-100 text-red-600;
+}
+
+.badge-success, .badge-green {
+    @apply bg-emerald-100 text-emerald-600;
+}
+
+.badge-info, .badge-blue {
+    @apply bg-blue-100 text-blue-600;
+}
+
+.badge-warning, .badge-yellow {
+    @apply bg-yellow-100 text-yellow-600;
+}
+
+.badge-purple {
+    @apply bg-purple-100 text-purple-600;
+}
+
+.badge-pink {
+    @apply bg-pink-100 text-pink-600;
+}
