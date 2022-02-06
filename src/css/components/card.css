@@ -1,0 +1,24 @@
+.card {
+    @apply block bg-white py-3 px-4 rounded-md shadow-sm border border-gray-50;
+
+    .card-header {
+        @apply flex items-center;
+        
+        h5 {
+            @apply text-lg text-gray-600;
+        }
+        .icon-area {
+            @apply border p-1 border-gray-200 rounded-full ml-auto;
+        }
+    }
+
+    .card-body {
+        @apply mt-1;
+        h6 {
+            @apply font-bold inline-block;
+        }
+        span.badge {
+            @apply inline-block;
+        }
+    }
+}
