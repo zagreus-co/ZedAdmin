@@ -15,9 +15,56 @@
                 <ion-icon class='mt-2' name="menu-outline"></ion-icon>
             </button>
             
-            <header>
-                <h1>ZedAdmin<span>.</span></h1>
-            </header>
+            <div>
+                <div class="relative inline-block" x-data='{open: false}'>
+                    <button @click='open = !open' id='mobileMenuBtn' x-transition class='text-xl rounded px-2 hover:bg-gray-100 transition duration-200'>
+                        <ion-icon class='mt-2' name="notifications-outline"></ion-icon>
+                    </button>
+                    <div x-show="open" class="absolute w-80 z-20 bg-white border-2 border-gray-100 rounded-md shadow-lg top-6 -right-14 sm:-right-8 md:right-1 mt-1 text-center" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-y-0 transform" x-transition:enter-end="opacity-100 scale-y-100 transform" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;">
+                        
+                        <div class='py-3 text-sm text-gray-500'>
+                            <span class="text-theme-primary">2</span> Unread notification
+                        </div>
+
+                        <div class="card flex-card hover:bg-theme-secondary items-center text-left">
+                            <span class="border py-1 px-2 border-theme-primary rounded-full mr-3">
+                                <ion-icon class='mt-1 text-theme-primary' name="dice-outline"></ion-icon>
+                            </span>
+                            <div>
+                                <div class="card-header">its just an notificationt</div>
+                                <small class="text-gray-500">5 Minutes ago</small>
+                            </div>
+                        </div>
+
+                        <div class="card flex-card hover:bg-theme-secondary items-center text-left">
+                            <span class="border py-1 px-2 border-theme-primary rounded-full mr-3">
+                                <ion-icon class='mt-1 text-theme-primary' name="dice-outline"></ion-icon>
+                            </span>
+                            <div>
+                                <div class="card-header">This notification title is longer than expection</div>
+                                <small class="text-gray-500">5 Minutes ago</small>
+                            </div>
+                        </div>
+
+                        <div class="card flex-card hover:bg-theme-secondary items-center text-left">
+                            <span class="border py-1 px-2 border-gray-100 rounded-full mr-3">
+                                <ion-icon class='mt-1' name="dice-outline"></ion-icon>
+                            </span>
+                            <div>
+                                <div class="card-header">its just an notificationt</div>
+                                <small class="text-gray-500">5 Minutes ago</small>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="relative inline-block">
+                    <button id='mobileMenuBtn' class='text-xl rounded px-2 hover:bg-gray-100 transition duration-200'>
+                        <ion-icon class='mt-2' name="chatbubbles-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
         </nav>
 
         <aside class="sidebar hidden lg:block left-0">
@@ -28,7 +75,7 @@
                 <ul>
                     <li class="badge">Main Menu</li>
                     <li class="active">
-                        <a href="/index.html">
+                        <a href="./index.html">
                             <ion-icon name="planet"></ion-icon>
                             Dashboard
                         </a>
@@ -229,6 +276,7 @@
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <!-- ChartJS -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+        <script src='./dist/js/alpine@3.min.js'></script>
         <script src='./dist/js/dashboard.js'></script>
         <script src='./dist/js/dashboard-chart.js'></script>
 

@@ -76,7 +76,7 @@ aside.sidebar {
 }
 
 .mobile-navbar {
-    @apply bg-white shadow-sm py-2 pl-6 pr-10 flex justify-between items-center lg:hidden;
+    @apply bg-white shadow-sm py-2 pl-6 pr-10 flex justify-between items-center;
 
     header {
         @apply flex items-center;
@@ -91,5 +91,5 @@ aside.sidebar {
 }
 
 main {
-    @apply ml-10 lg:ml-80 pr-10 mt-7 ;
+    @apply ml-10 lg:ml-80 pr-10 mt-7 pb-8 ;
 }
