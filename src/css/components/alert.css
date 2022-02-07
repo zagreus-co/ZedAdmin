@@ -1,0 +1,23 @@
+.alert {
+    @apply block rounded p-4 bg-gray-100 shadow-sm;
+}
+
+.alert-success, alert-green {
+    @apply bg-emerald-500 text-white;
+}
+
+.alert-info, alert-blue {
+    @apply bg-blue-100 text-blue-800;
+}
+
+.alert-primary, alert-theme {
+    @apply bg-theme-primary text-white;
+}
+
+.alert-warning, alert-yellow {
+    @apply bg-yellow-400 text-yellow-800;
+}
+
+.alert-danger, alert-red {
+    @apply bg-red-500 text-white;
+}

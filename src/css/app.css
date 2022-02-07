@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "./components/alert";
 @import "./components/typography";
 @import "./components/button";
 @import "./components/card";
