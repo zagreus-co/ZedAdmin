@@ -294,9 +294,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: -1.5rem;
 }.left-0{
   left: 0px;
-}.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
 }.mt-2{
   margin-top: 0.5rem;
 }.mr-3{
@@ -317,10 +314,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }.mb-1{
   margin-bottom: 0.25rem;
-}.mb-2{
-  margin-bottom: 0.5rem;
-}.ml-auto{
-  margin-left: auto;
 }.block{
   display: block;
 }.inline-block{
@@ -363,6 +356,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.25rem;
 }.rounded-full{
   border-radius: 9999px;
+}.rounded-sm{
+  border-radius: 0.125rem;
+}.rounded-md{
+  border-radius: 0.375rem;
+}.rounded-lg{
+  border-radius: 0.5rem;
+}.rounded-xl{
+  border-radius: 0.75rem;
+}.rounded-2xl{
+  border-radius: 1rem;
+}.rounded-none{
+  border-radius: 0px;
 }.border{
   border-width: 1px;
 }.border-b{
@@ -578,6 +583,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
+}.card .card-block{
+  display: block;
 }.card .card-body{
   margin-top: 0.25rem;
 }.card .card-footer{
@@ -602,7 +609,21 @@ Ensure the default browser behavior of the `hidden` attribute.
     border-radius: 9999px;
     vertical-align: middle;
     font-weight: 700;
-}.badge-danger, .badge-error{
+}/* Badge border radius */.badge-rounded{
+  border-radius: 0.25rem;
+}.badge-rounded-sm{
+  border-radius: 0.125rem;
+}.badge-rounded-md{
+  border-radius: 0.375rem;
+}.badge-rounded-lg{
+  border-radius: 0.5rem;
+}.badge-rounded-xl{
+  border-radius: 0.75rem;
+}.badge-rounded-2xl{
+  border-radius: 1rem;
+}.badge-rounded-none{
+  border-radius: 0px;
+}/* Badge colors */.badge-danger, .badge-error{
   --tw-bg-opacity: 1;
   background-color: rgb(254 226 226 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -617,6 +638,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}.badge-primary, .badge-theme{
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 104 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }.badge-warning, .badge-yellow{
   --tw-bg-opacity: 1;
   background-color: rgb(254 249 195 / var(--tw-bg-opacity));
@@ -632,11 +658,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(252 231 243 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(219 39 119 / var(--tw-text-opacity));
-}.badge-theme{
-  --tw-bg-opacity: 1;
-  background-color: rgb(92 104 255 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }:root {
     --backgroundColor: #fafafa;
 }/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap'); *//* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap'); */body {

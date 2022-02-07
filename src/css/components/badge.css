@@ -4,6 +4,30 @@
     @apply rounded-full align-middle font-bold;
 }
 
+/* Badge border radius */
+.badge-rounded {
+    @apply rounded;
+}
+.badge-rounded-sm {
+    @apply rounded-sm;
+}
+.badge-rounded-md {
+    @apply rounded-md;
+}
+.badge-rounded-lg {
+    @apply rounded-lg;
+}
+.badge-rounded-xl {
+    @apply rounded-xl;
+}
+.badge-rounded-2xl {
+    @apply rounded-2xl;
+}
+.badge-rounded-none {
+    @apply rounded-none;
+}
+
+/* Badge colors */
 .badge-danger, .badge-error {
     @apply bg-red-100 text-red-600;
 }
@@ -16,6 +40,10 @@
     @apply bg-blue-100 text-blue-600;
 }
 
+.badge-primary, .badge-theme {
+    @apply bg-theme-primary text-white;
+}
+
 .badge-warning, .badge-yellow {
     @apply bg-yellow-100 text-yellow-600;
 }
@@ -26,7 +54,4 @@
 
 .badge-pink {
     @apply bg-pink-100 text-pink-600;
-}
-.badge-theme {
-    @apply bg-theme-primary text-white;
 }

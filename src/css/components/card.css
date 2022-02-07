@@ -9,6 +9,8 @@
         }
     }
 
+    .card-block { @apply block; }
+
     .card-body {
         @apply mt-1;
     }

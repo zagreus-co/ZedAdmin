@@ -145,13 +145,13 @@
 
                     <li class="badge">Components</li>
 
-                    <li class="active">
+                    <li>
                         <a href="./alert.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Alerts
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./badge.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Badges
@@ -169,94 +169,111 @@
         </aside>
 
         <main>
-            <h4 class="font-bold">Alert components</h4>
+            <h4 class="font-bold">Badge components</h4>
             
             <section class="mt-2">
                 <div class='block border-b border-gray-200 pb-3 mb-3'>
-                    Made with Tailwind CSS, they are elements that provide contextual feedback messages for user actions. The notification is a simple colored block meant to draw the attention to the user about something.
+                    Badges are a very useful component to label your texts on your website. <br>
+                    Like all other components, we try to use class names similar to bootstrap so switching from Bootstrap to Tailwind, would not be hard for you.
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-3 border-b border-gray-200 pb-3">
-                    <div>
-                        <div class="alert">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center border-b border-gray-200 pb-3">
+                    <div class='card'>
+                        <div class="card-header mb-3">
+                            <h5 class='font-bold'>Normal badge colors</h5>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge badge-error mb-1">
+                                ".badge-error" or ".badge-red"
+                            </span>
+                            <br>
+                            <span class="badge badge-success mb-1">
+                                ".badge-success" or ".badge-green"
+                            </span>
+                            <br>
+                            <span class="badge badge-info mb-1">
+                                ".badge-info" or ".badge-blue"
+                            </span>
+                            <br>
+                            <span class="badge badge-primary mb-1">
+                                ".badge-primary" or ".badge-theme"
+                            </span>
+                            <br>
+                            <span class="badge badge-warning mb-1">
+                                ".badge-warning" or ".badge-yellow"
+                            </span>
+                            <br>
+                            <span class="badge badge-purple mb-1">
+                                ".badge-purple"
+                            </span>
+                            <br>
+                            <span class="badge badge-pink mb-1">
+                                ".badge-pink"
+                            </span>
                         </div>
                     </div>
                     <div>
-                        <div class="badge badge-theme inline-block mb-1">
-                            use ".alert"
-                        </div>
-                        <pre class='whitespace-normal'> <code class="language-html rounded"> &lt;div class=&quot;alert&quot;&gt; ... &lt;/div&gt; </code> </pre>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-3 border-b border-gray-200 pb-3">
-                    <div>
-                        <div class="alert alert-success">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="badge badge-theme inline-block mb-1">
-                            use ".alert-success" or ".alert-green"
-                        </div>
-                        <pre class='whitespace-normal'> <code class="language-html rounded"> &lt;div class=&quot;alert alert-success&quot;&gt; ... &lt;/div&gt; </code> </pre>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-3 border-b border-gray-200 pb-3">
-                    <div>
-                        <div class="alert alert-info">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="badge badge-theme inline-block mb-1">
-                            use ".alert-info" or ".alert-blue"
-                        </div>
-                        <pre class='whitespace-normal'> <code class="language-html rounded"> &lt;div class=&quot;alert alert-info&quot;&gt; ... &lt;/div&gt; </code> </pre>
-                    </div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-3 border-b border-gray-200 pb-3">
-                    <div>
-                        <div class="alert alert-primary">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="badge badge-theme inline-block mb-1">
-                            use ".alert-primary" or ".alert-theme"
-                        </div>
-                        <pre class='whitespace-normal'> <code class="language-html rounded"> &lt;div class=&quot;alert alert-primary&quot;&gt; ... &lt;/div&gt; </code> </pre>
+                        <pre class=''> <code class="language-html rounded">
+&lt;span class=&quot;badge badge-danger&quot;&gt; ... &lt;/span&gt; <br>
+&lt;span class=&quot;badge badge-success&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-info&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-primary&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-warning&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-purple&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-pink&quot;&gt; ... &lt;/span&gt; 
+                        </code> </pre>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-3 border-b border-gray-200 pb-3">
-                    <div>
-                        <div class="alert alert-warning">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                    </div>
-                    <div>
-                        <div class="badge badge-theme inline-block mb-1">
-                            use ".alert-warning" or ".alert-yellow"
-                        </div>
-                        <pre class='whitespace-normal'> <code class="language-html rounded"> &lt;div class=&quot;alert alert-warning&quot;&gt; ... &lt;/div&gt; </code> </pre>
-                    </div>
-                </div>
+            </section>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mb-3 border-b border-gray-200 pb-3">
-                    <div>
-                        <div class="alert alert-danger">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                    <div class='card'>
+                        <div class="card-header card-block mb-3">
+                            <h5 class='font-bold'>Edit your badge corners</h5>
+                            <small class='mt-2 text-gray-500'>By default, all badge corners used ".rounded-full" but you can change it with built-in classes</small>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge badge-error badge-rounded mb-1">
+                                ".badge-rounded" is similar to ".rounded"
+                            </span>
+                            <br>
+                            <span class="badge badge-success badge-rounded-sm mb-1">
+                                ".badge-rounded-sm" is similar to ".rounded-sm"
+                            </span>
+                            <br>
+                            <span class="badge badge-info badge-rounded-md mb-1">
+                                ".badge-rounded-md" is similar to ".rounded-md"
+                            </span>
+                            <br>
+                            <span class="badge badge-primary badge-rounded-lg mb-1">
+                                ".badge-rounded-lg" is similar to ".rounded-lg"
+                            </span>
+                            <br>
+                            <span class="badge badge-warning badge-rounded-xl mb-1">
+                                ".badge-rounded-xl" is similar to ".rounded-xl"
+                            </span>
+                            <br>
+                            <span class="badge badge-purple badge-rounded-2xl mb-1">
+                                ".badge-rounded-2xl" is similar to ".rounded-2xl"
+                            </span>
+                            <br>
+                            <span class="badge badge-pink badge-rounded-none mb-1">
+                                ".badge-rounded-none" is similar to ".rounded-none"
+                            </span>
                         </div>
                     </div>
                     <div>
-                        <div class="badge badge-theme inline-block mb-1">
-                            use ".alert-danger" or ".alert-red"
-                        </div>
-                        <pre class='whitespace-normal'> <code class="language-html rounded"> &lt;div class=&quot;alert alert-danger&quot;&gt; ... &lt;/div&gt; </code> </pre>
+                        <pre class=''> <code class="language-html rounded">
+&lt;span class=&quot;badge badge-danger badge-rounded&quot;&gt; ... &lt;/span&gt; <br>
+&lt;span class=&quot;badge badge-success badge-rounded-sm&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-inf badge-roundedo-md&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-primary badge-rounded-lg&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-warning badge-rounded-xl&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-purple badge-rounded-2xl&quot;&gt; ... &lt;/span&gt; 
+&lt;span class=&quot;badge badge-pink badge-rounded-none&quot;&gt; ... &lt;/span&gt; 
+                        </code> </pre>
                     </div>
                 </div>
 
