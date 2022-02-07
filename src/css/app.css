@@ -88,6 +88,9 @@ aside.sidebar {
             }
         }
     }
+    .dropdown-content {
+        @apply absolute w-80 z-20 bg-white border-2 border-gray-100 rounded-md shadow-lg top-6 mt-1;
+    }
 }
 
 main {

@@ -20,9 +20,9 @@
                     <button @click='open = !open' :class="open ? 'bg-gray-100' : '' " x-transition class='text-xl rounded px-2 hover:bg-gray-100 transition duration-200'>
                         <ion-icon class='mt-2' name="notifications-outline"></ion-icon>
                     </button>
-                    <div x-show="open" @click.outside="open = false" class="absolute w-80 z-20 bg-white border-2 border-gray-100 rounded-md shadow-lg top-6 -right-14 sm:-right-8 md:right-1 mt-1 text-center" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-y-0 transform" x-transition:enter-end="opacity-100 scale-y-100 transform" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;">
+                    <div x-show="open" @click.outside="open = false" class="dropdown-content -right-14 sm:-right-8 md:right-1 text-center" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-y-0 transform" x-transition:enter-end="opacity-100 scale-y-100 transform" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;">
                         
-                        <div class='py-3 text-sm text-gray-500'>
+                        <div class='p-3 text-sm text-gray-500'>
                             <span class="text-theme-primary">2</span> Unread notification
                         </div>
 
@@ -63,7 +63,7 @@
                     <button @click='open = !open' :class="open ? 'bg-gray-100' : '' "  class='text-xl rounded px-2 hover:bg-gray-100 transition duration-200'>
                         <ion-icon class='mt-2' name="person-outline"></ion-icon>
                     </button>
-                    <div x-show="open" @click.outside="open = false" class="absolute w-80 z-20 bg-white border-2 border-gray-100 rounded-md shadow-lg top-6 -right-6 sm:-right-8 md:right-1 mt-1 text-left" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-y-0 transform" x-transition:enter-end="opacity-100 scale-y-100 transform" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;">
+                    <div x-show="open" @click.outside="open = false" class="dropdown-content -right-6 sm:-right-8 md:right-1 text-left" x-transition:enter="transition ease-out duration-200" x-transition:enter-start="opacity-0 scale-y-0 transform" x-transition:enter-end="opacity-100 scale-y-100 transform" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;">
                         
                         <div class='p-3 text-sm text-gray-500 border-b border-gray-100'>
                             Signed in as
