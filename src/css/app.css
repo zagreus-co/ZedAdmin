@@ -1,12 +1,13 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import "./variables";
+@import "./utilities";
 @import "./components/alert";
 @import "./components/typography";
 @import "./components/button";
 @import "./components/card";
 @import "./components/badge";
-@import "./variables";
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap'); */

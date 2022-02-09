@@ -1,0 +1,3 @@
+a {
+    @apply text-theme-primary hover:text-theme-darked-primary transition duration-200;
+}
