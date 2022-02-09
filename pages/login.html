@@ -1,1 +1,53 @@
-<!-- Todo: Complete This page -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#5c68ff" />
+        <title>ZedAdmin - Login to account</title>
+        <link rel="stylesheet" href="../dist/css/style.css" />
+    </head>
+    <body>
+
+        <section class="flex justify-center" style="height: 100vh;">
+            <div class="card w-11/12 md:w-9/12 lg:w-5/12 my-auto mx-auto">
+                <div class="card-header justify-between border-b border-gray-100 py-3 mb-3">
+                    <h1 class="text-3xl">ZedAdmin<span class="text-theme-primary">.</span></h1>
+                    <a href="../index.html">Back to home</a>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3 space-y-1">
+                        <label for="username">Username: </label>
+                        <input type="text" placeholder="Eg. zagreus" class="w-full py-2 px-3 rounded border shadow-sm focus:outline-blue-100 ">
+                    </div>
+                    <div class="mb-3 space-y-1">
+                        <label for="username">Password: </label>
+                        <input type="password" placeholder="Enter your password here" class="w-full py-2 px-3 rounded border shadow-sm focus:outline-blue-100 ">
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="form-check">
+                            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-1 cursor-pointer" type="checkbox" id="remember_me">
+                            <label class="form-check-label inline-block text-gray-800" for="remember_me">
+                                Remember me
+                            </label>
+                        </div>
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                    <div class="flex justify-between border-t border-gray-100 mt-4 pt-2">
+                        <a href="./register.html">Register new account</a>
+                        <a href="./">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Icons pack -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <!-- ChartJS -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+        <script src='../dist/js/alpine@3.min.js'></script>
+        <script src='../dist/js/dashboard.js'></script>
+
+    </body>
+</html>
