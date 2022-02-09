@@ -294,8 +294,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: -1.5rem;
 }.left-0{
   left: 0px;
-}.float-left{
-  float: left;
 }.my-auto{
   margin-top: auto;
   margin-bottom: auto;
@@ -322,8 +320,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }.mb-1{
   margin-bottom: 0.25rem;
-}.mr-1{
-  margin-right: 0.25rem;
 }.block{
   display: block;
 }.inline-block{
@@ -336,16 +332,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }.h-14{
   height: 3.5rem;
-}.h-4{
-  height: 1rem;
 }.w-full{
   width: 100%;
 }.w-14{
   width: 3.5rem;
 }.w-11\/12{
   width: 91.666667%;
-}.w-4{
-  width: 1rem;
 }.scale-y-0{
   --tw-scale-y: 0;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -354,12 +346,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }.transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}.cursor-pointer{
-  cursor: pointer;
-}.appearance-none{
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }.grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }.items-center{
@@ -411,24 +397,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}.border-gray-300{
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }.bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }.bg-theme-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(92 104 255 / var(--tw-bg-opacity));
-}.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}.bg-contain{
-  background-size: contain;
-}.bg-center{
-  background-position: center;
-}.bg-no-repeat{
-  background-repeat: no-repeat;
 }.p-3{
   padding: 0.75rem;
 }.px-4{
@@ -457,8 +431,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: left;
 }.text-center{
   text-align: center;
-}.align-top{
-  vertical-align: top;
 }.text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -494,9 +466,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}.text-gray-800{
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
 }.opacity-0{
   opacity: 0;
 }.opacity-100{
@@ -532,7 +501,69 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.theme-anchor:hover{
   --tw-text-opacity: 1;
   color: rgb(77 86 224 / var(--tw-text-opacity));
-}.alert{
+}.form-control{
+  width: 100%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.form-control:focus{
+  outline-color: #dbeafe;
+}.form-control.form-control-sm{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}.form-control.form-control-lg{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}.form-control:not(.form-control-lg):not(.form-control-sm){
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}/* checkboxes & radios */.form-check{
+  display: flex;
+  align-items: center;
+}.form-check > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}.form-check .form-check-input{
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}.form-check .form-check-input:checked{
+  --tw-border-opacity: 1;
+  border-color: rgb(92 104 255 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 104 255 / var(--tw-bg-opacity));
+}.form-check .form-check-input:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}.form-check .form-check-label {
+        /* @apply inline-block; */
+    }.alert{
   display: block;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
@@ -875,12 +906,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }@media (min-width: 1024px){main{
     margin-left: 20rem;
   }
-}.checked\:border-blue-600:checked{
-  --tw-border-opacity: 1;
-  border-color: rgb(37 99 235 / var(--tw-border-opacity));
-}.checked\:bg-blue-600:checked{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }.hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -897,9 +922,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}.focus\:outline-none:focus{
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }.focus\:outline-blue-100:focus{
   outline-color: #dbeafe;
 }@media (min-width: 640px){.sm\:-right-8{
