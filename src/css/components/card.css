@@ -31,3 +31,13 @@
 .card-bg-theme {
     @apply bg-theme-gray;
 }
+
+/* RTL Support: */
+body[dir=rtl] {
+    .card {
+        .icon-area {
+            margin-left: unset;
+            @apply mr-auto;
+        }
+    }
+}
