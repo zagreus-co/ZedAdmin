@@ -2,7 +2,8 @@
     @apply text-center block rounded-md transition-all ease-in-out duration-200;
 }
 
-.btn:disabled, .btn.disabled {
+.btn:disabled,
+.btn.disabled {
     @apply opacity-60 cursor-not-allowed;
 }
 
@@ -18,23 +19,29 @@
 }
 
 /* Simple backgrounded buttons */
-.btn-success, .btn-green {
+.btn-success,
+.btn-green {
     @apply bg-emerald-500 hover:bg-emerald-600 text-white;
 }
-.btn-primary, .btn-theme {
+.btn-primary,
+.btn-theme {
     color: #4d56e0;
     @apply bg-theme-primary hover:bg-theme-darked-primary text-white;
 }
-.btn-secondary, .btn-gray {
+.btn-secondary,
+.btn-gray {
     @apply bg-gray-400 hover:bg-gray-500 text-white;
 }
-.btn-danger, .btn-red {
+.btn-danger,
+.btn-red {
     @apply bg-red-500 hover:bg-red-600 text-white;
 }
-.btn-warning, .btn-yellow {
+.btn-warning,
+.btn-yellow {
     @apply bg-yellow-500 hover:bg-yellow-600 text-white;
 }
-.btn-info, .btn-blue {
+.btn-info,
+.btn-blue {
     @apply bg-blue-100 hover:bg-blue-200 text-blue-800;
 }
 .btn-light {
@@ -48,23 +55,29 @@
 }
 
 /* Outline buttons */
-.btn-outline-success, .btn-outline-green {
+.btn-outline-success,
+.btn-outline-green {
     @apply border border-emerald-500 hover:bg-emerald-500 text-emerald-500 hover:text-white;
 }
-.btn-outline-primary, .btn-outline-theme {
+.btn-outline-primary,
+.btn-outline-theme {
     color: #4d56e0;
     @apply border border-theme-primary hover:bg-theme-primary text-theme-primary hover:text-white;
 }
-.btn-outline-secondary, .btn-outline-gray {
+.btn-outline-secondary,
+.btn-outline-gray {
     @apply border border-gray-400 hover:bg-gray-400 text-gray-400 hover:text-white;
 }
-.btn-outline-danger, .btn-outline-red {
+.btn-outline-danger,
+.btn-outline-red {
     @apply border border-red-500 hover:bg-red-500 text-red-500 hover:text-white;
 }
-.btn-outline-warning, .btn-outline-yellow {
+.btn-outline-warning,
+.btn-outline-yellow {
     @apply border border-yellow-500 hover:bg-yellow-500 text-yellow-500 hover:text-white;
 }
-.btn-outline-info, .btn-outline-blue {
+.btn-outline-info,
+.btn-outline-blue {
     @apply border border-blue-100 hover:bg-blue-100 text-blue-100 hover:text-blue-800;
 }
 .btn-outline-light {
@@ -75,4 +88,24 @@
 }
 .btn-outline-link {
     @apply theme-anchor;
+}
+
+/* Button group */
+.btn-group {
+    @apply inline-flex;
+
+    .btn {
+        @apply rounded-none;
+
+        &:first-child {
+            @apply rounded-l-md;
+        }
+        &:last-child {
+            @apply rounded-r-md;
+        }
+    }
+}
+
+.btn-toolbar {
+    @apply flex flex-nowrap overflow-x-auto;
 }
