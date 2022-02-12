@@ -2,6 +2,10 @@
     @apply text-theme-primary hover:text-theme-darked-primary transition duration-200;
 }
 
+.code {
+    @apply text-red-400 bg-gray-100;
+}
+
 *::-webkit-scrollbar {
     width: 0.4em;
 }
