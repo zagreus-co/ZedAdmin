@@ -163,13 +163,13 @@
                             Badges
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./button.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Buttons
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="./input.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Inputs
@@ -181,113 +181,127 @@
         </aside>
 
         <main>
-            <h4 class="font-bold">Input components</h4>
+            <h4 class="font-bold">Button components</h4>
             <p class='block border-b border-gray-200 pb-3 mt-1 mb-3'>
-                Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.
+                In ZedAdmin, we created all the useful button classes you have already been familiar with in bootstrap!
             </p>
             
             <section class="mt-2">
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center border-b border-gray-200 pb-3">
+                <div class="grid grid-cols-1 items-center border-b border-gray-200 pb-1">
                     <div class='card'>
-                        <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Form controls</h5>
-                            <small>Textual form controls like inputs, selects, and textareas are styled with the .form-control class. Included are styles for general appearance, focus state, sizing, and more.</small>
-                        </div>
-                        <div class="card-body">
-                            <form class="space-y-3">
-                                <div class="form-group">
-                                    <label for="email_input">Email address</label>
-                                    <input type="email" class="form-control" id="email_input" placeholder="name@example.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="select_input">Example select</label>
-                                    <select class="form-control" id="select_input">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="text_area">Example textarea</label>
-                                    <textarea class="form-control" id="text_area" rows="3"></textarea>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div>
-                        <pre class=''> <code class="language-html rounded h-96">
-&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label for=&quot;email_input&quot;&gt;Email address&lt;/label&gt;
-    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email_input&quot; placeholder=&quot;name@example.com&quot;&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label for=&quot;select_input&quot;&gt;Example select&lt;/label&gt;
-    &lt;select class=&quot;form-control&quot; id=&quot;select_input&quot;&gt;
-        &lt;option&gt;1&lt;/option&gt;
-        &lt;option&gt;2&lt;/option&gt;
-        &lt;option&gt;3&lt;/option&gt;
-        &lt;option&gt;4&lt;/option&gt;
-        &lt;option&gt;5&lt;/option&gt;
-    &lt;/select&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;form-group&quot;&gt;
-    &lt;label for=&quot;text_area&quot;&gt;Example textarea&lt;/label&gt;
-    &lt;textarea class=&quot;form-control&quot; id=&quot;text_area&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
-&lt;/div&gt;
-                        </code> </pre>
-                    </div>
-                </div>
-
-            </section>
-
-            <section>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center border-b border-gray-200 pb-5 mt-5">
-                    <div class='card'>
-                        <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Sizing</h5>
-                            <small class='mt-2 text-gray-500'>
-                                Set padding of your inputs using classes like ".form-control-lg" and ".form-control-sm"
+                        <div class="card-header card-block pb-2 mb-3 border-b border-gray-100">
+                            <h5 class='font-bold'>Default & simple examples</h5>
+                            <small>
+                                The <code class="code">.btn</code> classes are designed to be used with the <code class="code">&lt;button&gt;</code> element. However, you can also use these classes on <code class="code">&lt;a&gt;</code> or <code class="code">&lt;input&gt;</code> elements (though some browsers may apply a slightly different rendering).
                             </small>
                         </div>
-                        <div class="card-body space-y-3">
-                            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
-                            <input class="form-control" type="text" placeholder="Default input">
-                            <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+                        <div class="card-body grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
+                            <button class="btn">Default</button>
+                            <button class="btn btn-primary">Primary | Theme</button>
+                            <button class="btn btn-success">Success | Green</button>
+                            <button class="btn btn-secondary">Secondary | Gray</button>
+                            <button class="btn btn-danger">Danger | Red</button>
+                            <button class="btn btn-warning">Warning | Yellow</button>
+                            <button class="btn btn-info">Info | Blue</button>
+                            <button class="btn btn-light">Light</button>
+                            <button class="btn btn-dark">Dark</button>
+                            <button class="btn btn-link">Link</button>
                         </div>
                     </div>
                     <div>
-                        <pre class=''> <code class="language-html rounded">
-&lt;input class=&quot;form-control form-control-lg&quot; type=&quot;text&quot; placeholder=&quot;.form-control-lg&quot;&gt;
-&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Default input&quot;&gt;
-&lt;input class=&quot;form-control form-control-sm&quot; type=&quot;text&quot; placeholder=&quot;.form-control-sm&quot;&gt;
-                        </code> </pre>
+                        <pre class=''> <code class="language-html rounded">&lt;button class=&quot;btn&quot;&gt;Default&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Primary | Theme&lt;/button&gt;
+&lt;button class=&quot;btn btn-success&quot;&gt;Success | Green&lt;/button&gt;
+&lt;button class=&quot;btn btn-secondary&quot;&gt;Secondary | Gray&lt;/button&gt;
+&lt;button class=&quot;btn btn-danger&quot;&gt;Danger | Red&lt;/button&gt;
+&lt;button class=&quot;btn btn-warning&quot;&gt;Warning | Yellow&lt;/button&gt;
+&lt;button class=&quot;btn btn-info&quot;&gt;Info | Blue&lt;/button&gt;
+&lt;button class=&quot;btn btn-light&quot;&gt;Light&lt;/button&gt;
+&lt;button class=&quot;btn btn-dark&quot;&gt;Dark&lt;/button&gt;
+&lt;button class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;</code> </pre>
                     </div>
                 </div>
+            </section>
 
+            <section class="mt-4">
+                <div class="grid grid-cols-1 items-center border-b border-gray-200 pb-3">
+                    <div class='card'>
+                        <div class="card-header card-block pb-2 mb-3 border-b border-gray-100">
+                            <h5 class='font-bold'>Outline buttons</h5>
+                            <small>
+                                In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <code class="code">.btn-outline-*</code> ones to remove all background images and colors on any button.
+                            </small>
+                        </div>
+                        <div class="card-body grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+                            <button class="btn btn-outline-primary">Primary | Theme</button>
+                            <button class="btn btn-outline-success">Success | Green</button>
+                            <button class="btn btn-outline-danger">Danger | Red</button>
+                            <button class="btn btn-outline-warning">Warning | Yellow</button>
+                            <button class="btn btn-outline-info">Info | Blue</button>
+                            <button class="btn btn-outline-light">Light</button>
+                            <button class="btn btn-outline-secondary">Secondary | Gray</button>
+                            <button class="btn btn-outline-dark">Dark</button>
+                        </div>
+                    </div>
+                    <div>
+                        <pre class=''> <code class="language-html rounded"> &lt;button class=&quot;btn btn-outline-primary&quot;&gt;Primary | Theme&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-success&quot;&gt;Success | Green&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-danger&quot;&gt;Danger | Red&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-warning&quot;&gt;Warning | Yellow&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-info&quot;&gt;Info | Blue&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-light&quot;&gt;Light&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-secondary&quot;&gt;Secondary | Gray&lt;/button&gt;
+&lt;button class=&quot;btn btn-outline-dark&quot;&gt;Dark&lt;/button&gt; </code> </pre>
+                    </div>
+                </div>
             </section>
 
             <section>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mt-5">
                     <div class='card'>
                         <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Readonly</h5>
+                            <h5 class='font-bold'>Button sizes</h5>
                             <small class='mt-2 text-gray-500'>
-                                Add the readonly boolean attribute on an input to prevent modification of the input’s value. Read-only inputs appear lighter (just like disabled inputs), but retain the standard cursor.
+                                Fancy larger or smaller buttons? Add <code class="code">.btn-lg</code> or <code class="code">.btn-sm</code> for additional sizes.
                             </small>
                         </div>
-                        <div class="card-body space-y-3">
-                            <input class="form-control" type="text" placeholder="this input is readonly" readonly>
+                        <div class="card-body grid grid-cols-1 lg:grid-cols-3 gap-1 items-center">
+                            <div>
+                                <button class="btn btn-primary w-full btn-sm">Small button</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary w-full">Normal button</button>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary w-full btn-lg">Large button</button>
+                            </div>
                         </div>
                     </div>
                     <div>
-                        <pre class=''> <code class="language-html rounded">
-&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;this input is readonly&quot; readonly&gt;
-                        </code> </pre>
+                        <pre class=''> <code class="language-html rounded">&lt;button class=&quot;btn btn-primary btn-sm&quot;&gt;Small button&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary&quot;&gt;Normal button&lt;/button&gt;
+&lt;button class=&quot;btn btn-primary btn-lg&quot;&gt;Large button&lt;/button&gt;</code> </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center mt-5">
+                    <div class='card'>
+                        <div class="card-header card-block mb-3">
+                            <h5 class='font-bold'>Disabled state</h5>
+                            <small class='mt-2 text-gray-500'>
+                                Make buttons look inactive by adding the <code class="code">disabled</code> boolean attribute to any <button> element.
+                            </small>
+                        </div>
+                        <div class="card-body grid grid-cols-2 gap-2">
+                            <button class="btn btn-red" disabled>Disabled</button>
+                            <button class="btn btn-green" disabled>Disabled</button>
+                        </div>
+                    </div>
+                    <div>
+                        <pre class=''> <code class="language-html rounded">&lt;button class=&quot;btn btn-red&quot; disabled&gt;Disabled&lt;/button&gt;
+&lt;button class=&quot;btn btn-green&quot; disabled&gt;Disabled&lt;/button&gt;</code> </pre>
                     </div>
                 </div>
 
@@ -295,48 +309,33 @@
 
             <!-- Checkbox and radios -->
 
-            <h4 class="font-bold border-t border-gray-200 mt-6 pt-5">Checkboxes and radios</h4>
+            <h4 class="font-bold border-t border-gray-200 mt-6 pt-5">Button group</h4>
             <p class='block mt-1 mb-3'>
-                Default checkboxes and radios are improved upon with the help of .form-check, a single class for both input types that improves the layout and behavior of their HTML elements.
+                Group a series of buttons together on a single line with the button group!
             </p>
 
             <section>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <div class='card'>
                         <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Checkboxes</h5>
+                            <h5 class='font-bold'>Basic example</h5>
                             <small class='mt-2 text-gray-500'>
-                                use the ".form-check" class in your checkboxes to bring new designs in your forms.
+                                Wrap a series of buttons with <code class="code">.btn</code> in <code class="code">.btn-group</code>.
                             </small>
                         </div>
-                        <div class="card-body space-y-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck1">
-                                <label class="form-check-label" for="defaultCheck1">
-                                  Default checkbox
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="defaultCheck2" disabled>
-                                <label class="form-check-label" for="defaultCheck2">
-                                    Disabled checkbox
-                                </label>
+                        <div class="card-body">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-secondary">Left</button>
+                                <button type="button" class="btn btn-secondary">Middle</button>
+                                <button type="button" class="btn btn-secondary">Right</button>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <pre class=''> <code class="language-html rounded h-44">&lt;div class=&quot;form-check&quot;&gt;
-    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;defaultCheck1&quot;&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck1&quot;&gt;
-        Default checkbox
-    &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;form-check&quot;&gt;
-    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;defaultCheck2&quot; disabled&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck2&quot;&gt;
-        Disabled checkbox
-    &lt;/label&gt;
+                        <pre class=''> <code class="language-html rounded">&lt;div class=&quot;btn-group&quot;&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Left&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Middle&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;Right&lt;/button&gt;
 &lt;/div&gt;</code> </pre>
                     </div>
                 </div>
@@ -347,94 +346,68 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <div class='card'>
                         <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Radios</h5>
+                            <h5 class='font-bold'>Button toolbar</h5>
                             <small class='mt-2 text-gray-500'>
-                                use the ".form-check" class in your radios to bring new designs in your forms.
+                                Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.
                             </small>
                         </div>
                         <div class="card-body space-y-3">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                  Default radio
-                                </label>
+                            <div class="btn-toolbar">
+                                <div class="btn-group mr-1">
+                                    <button type="button" class="btn btn-secondary">1</button>
+                                    <button type="button" class="btn btn-secondary">2</button>
+                                    <button type="button" class="btn btn-secondary">3</button>
+                                    <button type="button" class="btn btn-secondary">4</button>
+                                </div>
+                                <div class="btn-group mr-1">
+                                    <button type="button" class="btn btn-secondary">5</button>
+                                    <button type="button" class="btn btn-secondary">6</button>
+                                    <button type="button" class="btn btn-secondary">7</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-secondary">8</button>
+                                </div>
                             </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                <label class="form-check-label" for="exampleRadios2">
-                                  Second default radio
-                                </label>
-                            </div>
-                            <div class="form-check disabled">
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                                <label class="form-check-label" for="exampleRadios3">
-                                  Disabled radio
-                                </label>
+
+                            <div class="btn-toolbar">
+                                <div class="btn-group mr-2">
+                                    <button type="button" class="btn btn-secondary">1</button>
+                                    <button type="button" class="btn btn-secondary">2</button>
+                                    <button type="button" class="btn btn-secondary">3</button>
+                                    <button type="button" class="btn btn-secondary">4</button>
+                                </div>
+
+                                <input type="text" class="form-control" placeholder="Input with btn toolbar example">
                             </div>
                         </div>
                     </div>
                     <div>
-                        <pre class=''> <code class="language-html rounded h-44">&lt;div class=&quot;form-check&quot;&gt;
-    &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleRadios&quot; id=&quot;exampleRadios1&quot; value=&quot;option1&quot; checked&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios1&quot;&gt;
-        Default radio
-    &lt;/label&gt;
+                        <pre class=''> <code class="language-html rounded h-48">&lt;div class=&quot;btn-toolbar&quot;&gt;
+    &lt;div class=&quot;btn-group mr-1&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;1&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;2&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;3&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;4&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn-group mr-1&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;5&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;6&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;7&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;btn-group&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;8&lt;/button&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
+&lt;!--  --&gt;
+&lt;div class=&quot;btn-toolbar&quot;&gt;
+    &lt;div class=&quot;btn-group mr-2&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;1&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;2&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;3&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-secondary&quot;&gt;4&lt;/button&gt;
+    &lt;/div&gt;
 
-&lt;div class=&quot;form-check&quot;&gt;
-    &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleRadios&quot; id=&quot;exampleRadios2&quot; value=&quot;option2&quot;&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios2&quot;&gt;
-        Second default radio
-    &lt;/label&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;form-check disabled&quot;&gt;
-    &lt;input class=&quot;form-check-input&quot; type=&quot;radio&quot; name=&quot;exampleRadios&quot; id=&quot;exampleRadios3&quot; value=&quot;option3&quot; disabled&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios3&quot;&gt;
-        Disabled radio
-    &lt;/label&gt;
-&lt;/div&gt;</code> </pre>
-                    </div>
-                </div>
-
-            </section>
-
-            <section>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-                    <div class='card'>
-                        <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Make it inline</h5>
-                            <small class='mt-2 text-gray-500'>
-                                Group checkboxes or radios on the same horizontal row by adding ".form-check-inline" to any ".form-check".
-                            </small>
-                        </div>
-                        <div class="card-body space-y-3">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                <label class="form-check-label" for="inlineCheckbox1">1</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                <label class="form-check-label" for="inlineCheckbox2">2</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" disabled>
-                                <label class="form-check-label" for="inlineCheckbox3">3 (disabled)</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <pre class=''> <code class="language-html rounded h-44">&lt;div class=&quot;form-check form-check-inline&quot;&gt;
-    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;inlineCheckbox1&quot; value=&quot;option1&quot;&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;inlineCheckbox1&quot;&gt;1&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check form-check-inline&quot;&gt;
-    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;inlineCheckbox2&quot; value=&quot;option2&quot;&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;inlineCheckbox2&quot;&gt;2&lt;/label&gt;
-&lt;/div&gt;
-&lt;div class=&quot;form-check form-check-inline&quot;&gt;
-    &lt;input class=&quot;form-check-input&quot; type=&quot;checkbox&quot; id=&quot;inlineCheckbox3&quot; value=&quot;option3&quot; disabled&gt;
-    &lt;label class=&quot;form-check-label&quot; for=&quot;inlineCheckbox3&quot;&gt;3 (disabled)&lt;/label&gt;
+    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Input with btn toolbar example&quot;&gt;
 &lt;/div&gt;</code> </pre>
                     </div>
                 </div>
@@ -445,6 +418,7 @@
 
         <!-- Icons pack -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        
         <!-- HighlightJS -->
         <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css">
         <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
@@ -452,6 +426,5 @@
 
         <script src='../dist/js/alpine@3.min.js'></script>
         <script src='../dist/js/dashboard.js'></script>
-
     </body>
 </html>
