@@ -48,3 +48,15 @@
 .form-check-inline {
     @apply inline-flex mr-3;
 }
+
+/* RTL Support: */
+body[dir=rtl] {
+    .form-check {
+        @apply space-x-reverse
+    }
+
+    .form-check-inline {
+        margin-right: unset;
+        @apply ml-3;
+    }
+}

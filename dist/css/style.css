@@ -674,7 +674,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     }.form-check-inline{
   margin-right: 0.75rem;
   display: inline-flex;
-}.alert{
+}/* RTL Support: */body[dir=rtl] .form-check > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 1;
+}body[dir=rtl] .form-check-inline {
+        margin-right: unset;
+        margin-left: 0.75rem;
+    }.alert{
   display: block;
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
