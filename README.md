@@ -31,7 +31,7 @@ npm run watch
 - [x] Badge
 - [ ] Breadcrumb
 - [x] Button
-  - [ ] Button group
+  - [x] Button group
 - [x] Card
 - [ ] Form
   - [ ] Dropdown
