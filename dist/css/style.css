@@ -601,7 +601,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(134, 134, 134);
     
 }.form-control{
-  width: 100%;
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -609,9 +608,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }.form-control:focus{
   outline-color: #dbeafe;
-}/* TODO: apply w-full only to elements that have not w-(*) class  *//* .form-control:not([class^=w-]) {
-    @apply w-full;
-} */.form-control.form-control-sm{
+}.form-control:not([class*="w-"]){
+  width: 100%;
+}.form-control.form-control-sm{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 0.5rem;

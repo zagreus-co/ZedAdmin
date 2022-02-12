@@ -1,11 +1,10 @@
 .form-control {
-    @apply w-full rounded border shadow-sm focus:outline-blue-100;
+    @apply rounded border shadow-sm focus:outline-blue-100;
 }
 
-/* TODO: apply w-full only to elements that have not w-(*) class  */
-/* .form-control:not([class^=w-]) {
+.form-control:not([class*="w-"]) {
     @apply w-full;
-} */
+}
 
 .form-control.form-control-sm {
     @apply py-1 px-2
