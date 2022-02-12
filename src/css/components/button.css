@@ -109,3 +109,18 @@
 .btn-toolbar {
     @apply flex flex-nowrap overflow-x-auto;
 }
+
+body[dir=rtl] {
+    .btn-group {
+        .btn {
+            @apply rounded-none;
+    
+            &:first-child {
+                @apply rounded-r-md;
+            }
+            &:last-child {
+                @apply rounded-l-md;
+            }
+        }
+    }
+}
