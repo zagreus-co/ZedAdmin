@@ -25,7 +25,7 @@ npm run watch
 ```
 ---
 ### Todo List
-- [ ] RTL Support
+- [x] RTL Support
 - [ ] Dropdown on sidebar
 - [x] Alert
 - [x] Badge
