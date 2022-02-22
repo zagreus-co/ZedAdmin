@@ -58,7 +58,7 @@ aside.sidebar {
                 @apply relative;
             }
             li a {
-                @apply block ml-6 py-3 px-3 rounded-md transition duration-200  items-center;
+                @apply flex ml-6 py-3 px-3 transition duration-200  items-center;
                 ion-icon {
                     @apply mr-2;
                 }
@@ -68,12 +68,43 @@ aside.sidebar {
                     @apply bg-theme-primary ml-2 rounded-full text-white;
                 }
             }
+            li a:not([class*="rounded-"]) {
+                @apply rounded-md;
+            }
+
             li.active a:before {
                 content: " ";
                 @apply bg-theme-primary h-7 px-1 absolute -left-1 rounded-md;
             }
             li.active a, li a:hover {
                 @apply bg-theme-secondary text-theme-primary;
+            }
+        }
+
+        ul.dropdown-container {
+            @apply space-y-0 pr-0;
+
+            li a {
+                @apply justify-between items-center;
+            }
+
+            li a > ion-icon {
+                @apply text-xs transition duration-200
+            }
+            li.active a > ion-icon {
+                @apply rotate-180;
+            }
+
+            .dropdown-items {
+                @apply pb-2 ml-6 space-y-1 bg-theme-secondary rounded-b;
+
+                a {
+                    @apply block px-2 hover:text-theme-primary font-medium transition ease-in-out duration-200;
+                    
+                    ion-icon {
+                        @apply text-xs ml-2 mr-1;
+                    }
+                }
             }
         }
     }
