@@ -52,6 +52,23 @@ body[dir=rtl] {
                     @apply -right-1;
                 }
             }
+
+            ul.dropdown-container {
+                @apply pl-0;
+
+                li.active a > ion-icon {
+                    @apply -rotate-180;
+                }
+    
+                .dropdown-items {
+                    margin-left: unset;
+                    @apply mr-6;
+    
+                    a ion-icon {
+                        @apply text-xs mr-2 ml-1;
+                    }
+                }
+            }
         }
     }
 

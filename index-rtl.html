@@ -136,18 +136,28 @@
 
                     <li class="badge">صفحات</li>
 
-                    <li>
-                        <a href="./pages/login.html">
-                            <ion-icon name="log-in"></ion-icon>
-                            ورود
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./pages/register.html">
-                            <ion-icon name="person-add"></ion-icon>
-                            ثبت نام
-                        </a>
-                    </li>
+                    <ul class="dropdown-container" x-data="{ isOpen: false }">
+                        <li @click="isOpen = !isOpen" :class="isOpen ? 'active' : ''">
+                            <a href="javascript:void(0)" :class="isOpen ? 'rounded-t-md' : ''">
+                                <span>
+                                    <ion-icon name="person-add"></ion-icon>
+                                    Authentications
+                                </span>
+
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </a>
+                        </li>
+                        <div x-show="isOpen" class="dropdown-items">
+                            <a href="./pages/login.html">
+                                <ion-icon name="return-down-back"></ion-icon>           
+                                ورود
+                            </a>
+                            <a href="./pages/register.html">
+                                <ion-icon name="return-down-back"></ion-icon>           
+                                ثبت نام
+                            </a>
+                        </div>
+                    </ul>
 
                     <li class="badge">کامپوننت ها</li>
 
