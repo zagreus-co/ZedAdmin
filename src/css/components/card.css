@@ -1,5 +1,13 @@
 .card {
-    @apply block bg-white py-3 px-4 rounded-md shadow-sm border border-gray-50 transition duration-200;
+    @apply block bg-white shadow-sm border border-gray-50 transition duration-200;
+
+    &:not([class*="rounded-"]) {
+        @apply rounded-md;
+    }
+
+    &:not([class*="p-"]):not([class*="px-"]):not([class*="py-"]) {
+        @apply p-4;
+    }
 
     .card-header {
         @apply flex items-center;

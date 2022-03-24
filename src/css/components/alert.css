@@ -1,5 +1,13 @@
 .alert {
-    @apply block rounded p-4 bg-gray-100 shadow-sm;
+    @apply block bg-gray-100 shadow-sm;
+
+    &:not([class*="rounded-"]) {
+        @apply rounded;
+    }
+
+    &:not([class*="p-"]):not([class*="px-"]):not([class*="py-"]) {
+        @apply p-4;
+    }
 }
 
 .alert-success, alert-green {

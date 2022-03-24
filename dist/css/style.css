@@ -617,13 +617,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(134, 134, 134);
     
 }.form-control{
-  border-radius: 0.25rem;
   border-width: 1px;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }.form-control:focus{
   outline-color: #dbeafe;
+}.form-control:not([class*="rounded-"]){
+  border-radius: 0.25rem;
 }.form-control:not([class*="w-"]){
   width: 100%;
 }.form-control.form-control-sm{
@@ -636,7 +637,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
-}.form-control:not(.form-control-lg):not(.form-control-sm){
+}.form-control:not(.form-control-lg):not(.form-control-sm):not([class*="p-"]):not([class*="px-"]):not([class*="py-"]){
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 0.75rem;
@@ -697,13 +698,15 @@ Ensure the default browser behavior of the `hidden` attribute.
         margin-left: 0.75rem;
     }.alert{
   display: block;
-  border-radius: 0.25rem;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-  padding: 1rem;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.alert:not([class*="rounded-"]){
+  border-radius: 0.25rem;
+}.alert:not([class*="p-"]):not([class*="px-"]):not([class*="py-"]){
+  padding: 1rem;
 }.alert-success, alert-green{
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
@@ -758,29 +761,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }.btn{
   display: block;
-  border-radius: 0.375rem;
   text-align: center;
   transition-property: all;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}.btn:disabled, .btn.disabled{
-  cursor: not-allowed;
-  opacity: 0.6;
-}/* Buttons sizes */.btn-lg{
+}.btn:not([class*="rounded-"]){
+  border-radius: 0.375rem;
+}/* Buttons sizes */.btn.btn-lg{
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-}.btn-sm{
+}.btn.btn-sm{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   padding-left: 1rem;
   padding-right: 1rem;
-}.btn:not(.btn-lg):not(.btn-sm){
+}.btn:not(.btn-lg):not(.btn-sm):not([class*="p-"]):not([class*="px-"]):not([class*="py-"]){
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}.btn:disabled, .btn.disabled{
+  cursor: not-allowed;
+  opacity: 0.6;
 }/* Simple backgrounded buttons */.btn-success, .btn-green{
   --tw-bg-opacity: 1;
   background-color: rgb(16 185 129 / var(--tw-bg-opacity));
@@ -983,16 +987,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-left-radius: 0.375rem;
 }.card{
   display: block;
-  border-radius: 0.375rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(249 250 251 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1001,6 +1000,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 200ms;
+}.card:not([class*="rounded-"]){
+  border-radius: 0.375rem;
+}.card:not([class*="p-"]):not([class*="px-"]):not([class*="py-"]){
+  padding: 1rem;
 }.card .card-header{
   display: flex;
   align-items: center;
