@@ -13,3 +13,6 @@ document.addEventListener("click", (event) => {
     
     if (!mobile_menu.classList.contains('hidden')) mobile_menu.classList.add('hidden');
 });
+
+// Scroll to active element [issue #2]
+document.querySelector("nav ul li.active").scrollIntoView({ behavior: 'smooth', block: 'end'});
