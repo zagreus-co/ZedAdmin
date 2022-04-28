@@ -23,3 +23,28 @@
     background-color: rgb(134, 134, 134);
     
 }
+
+/* Background colors */
+.bg-success, .bg-emerald {
+    @apply bg-emerald-500;
+}
+
+.bg-info {
+    @apply bg-blue-200;
+}
+
+.bg-danger, .bg-red {
+    @apply bg-red-500;
+}
+
+.bg-warning, .bg-yellow {
+    @apply bg-yellow-500;
+}
+
+.bg-dark {
+    @apply bg-gray-700;
+}
+
+.bg-light {
+    @apply bg-gray-200;
+}
