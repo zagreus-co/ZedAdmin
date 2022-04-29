@@ -9,11 +9,13 @@
     }
 
     .progress-bar {
+        @apply flex justify-center content-center flex-col text-center text-white text-[12px];
+
         &:not([class*="rounded-"]) {
             @apply rounded-full;
         }
         &:not([class*="h-"]) {
-            @apply  h-2.5;
+            @apply h-2.5;
         }
         &:not([class*="bg-"]) {
             @apply bg-theme-primary;
