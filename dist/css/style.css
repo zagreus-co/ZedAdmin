@@ -334,6 +334,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }.mr-1{
   margin-right: 0.25rem;
+}.mt-3{
+  margin-top: 0.75rem;
 }.block{
   display: block;
 }.inline-block{
