@@ -1,9 +1,20 @@
 .progress {
-    @apply w-full bg-gray-200 rounded-full h-2.5;
+    @apply w-full bg-gray-200;
+
+    &:not([class*="rounded-"]) {
+        @apply rounded-full;
+    }
+    &:not([class*="h-"]) {
+        @apply  h-2.5;
+    }
 
     .progress-bar {
-        @apply h-2.5 rounded-full;
-
+        &:not([class*="rounded-"]) {
+            @apply rounded-full;
+        }
+        &:not([class*="h-"]) {
+            @apply  h-2.5;
+        }
         &:not([class*="bg-"]) {
             @apply bg-theme-primary;
         }
