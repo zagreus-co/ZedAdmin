@@ -44,7 +44,7 @@ npm run watch
   - [ ] Upload
 - [ ] Modal
 - [ ] Pagination
-- [ ] Progress
+- [x] Progress
 - [ ] Tabs
 - [ ] Toast
 - [ ] Tooltip
