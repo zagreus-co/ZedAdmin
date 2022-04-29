@@ -334,8 +334,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }.mr-1{
   margin-right: 0.25rem;
-}.mt-3{
-  margin-top: 0.75rem;
 }.block{
   display: block;
 }.inline-block{
@@ -530,9 +528,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
-}.text-pink-500{
-  --tw-text-opacity: 1;
-  color: rgb(236 72 153 / var(--tw-text-opacity));
 }.opacity-0{
   opacity: 0;
 }.opacity-100{
