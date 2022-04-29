@@ -358,6 +358,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0.75rem;
 }.h-5{
   height: 1.25rem;
+}.h-4{
+  height: 1rem;
 }.w-full{
   width: 100%;
 }.w-14{
@@ -366,6 +368,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 50%;
 }.w-11\/12{
   width: 91.666667%;
+}.w-8\/12{
+  width: 66.666667%;
+}.w-5\/12{
+  width: 41.666667%;
+}.w-7\/12{
+  width: 58.333333%;
 }.-rotate-45{
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -377,6 +385,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }.transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}@-webkit-keyframes ping{75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}@keyframes ping{75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}.animate-ping{
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}@-webkit-keyframes pulse{50%{
+    opacity: .5;
+  }
+}@keyframes pulse{50%{
+    opacity: .5;
+  }
+}.animate-pulse{
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }.grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }.grid-cols-2{
@@ -443,6 +471,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.bg-theme-primary{
   --tw-bg-opacity: 1;
   background-color: rgb(92 104 255 / var(--tw-bg-opacity));
+}.bg-orange-500{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
+}.bg-orange-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}.bg-orange-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 146 60 / var(--tw-bg-opacity));
 }.p-3{
   padding: 0.75rem;
 }.px-4{
