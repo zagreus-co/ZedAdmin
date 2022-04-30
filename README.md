@@ -46,5 +46,12 @@ npm run watch
 - [ ] Pagination
 - [x] Progress
 - [ ] Tabs
+  - [x] Default Tabs
+  - [ ] Basic tabs with underline
+  - [ ] Tabs with underline
+  - [ ] Tabs with icons
+  - [ ] Pills tabs
+  - [ ] Full width tabs
+  - [ ] Interactive tabs using AlpineJS
 - [ ] Toast
 - [ ] Tooltip

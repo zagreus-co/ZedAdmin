@@ -185,13 +185,13 @@
                             Inputs
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="./progress.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Progress
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./tabs.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Tabs
@@ -203,169 +203,60 @@
         </aside>
 
         <main>
-            <h4 class="font-bold">Progress components</h4>
+            <h4 class="font-bold">Tabs components</h4>
             
             <section class="mt-2">
                 <p class='block border-b border-gray-200 pb-3 mb-3'>
-                    Documentation and examples for using custom progress bars featuring support for stacked bars, animated backgrounds, and text labels.<br>
+                    Use these responsive tabs components to create a secondary navigational hierarchy for your website or toggle content inside a container.
                 </p>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center border-b border-gray-200 pb-3">
+                <div class="grid grid-cols-1 items-center border-b border-gray-200 pb-3">
                     <div class='card'>
                         <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Basic example</h5>
-                            <small class='mt-2 text-gray-500'>This is a very basic progress bar that you may use in your panels to show the progress of tasks.</small>
+                            <h5 class='font-bold'>Default tabs</h5>
+                            <small class='mt-2 text-gray-500'>Use the following default tabs component example to show a list of links that the user can navigate from on your website.</small>
                         </div>
-                        <div class="card-body space-y-3">
-                            <div>
-                                <span>Default progress bar</span>
-                                <div class="progress">
-                                    <div class="progress-bar w-6/12"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span>Success progress bar</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-success w-6/12"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span>Info progress bar</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-info w-6/12"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span>Warning progress bar</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-warning w-6/12"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span>Danger progress bar</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-danger w-6/12"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span>Dark progress bar</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-dark w-6/12"></div>
-                                </div>
-                            </div>
+                        <div class="card-body">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link active">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Settings</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Contacts</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link disabled">Disabled</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div>
-                        <pre class=''> <code class="language-html rounded">&lt;div class=&quot;progress&quot;&gt;
-    &lt;div class=&quot;progress-bar w-6/12&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;progress&quot;&gt;
-    &lt;div class=&quot;progress-bar bg-success w-6/12&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;progress&quot;&gt;
-    &lt;div class=&quot;progress-bar bg-info w-6/12&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;progress&quot;&gt;
-    &lt;div class=&quot;progress-bar bg-warning w-6/12&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;progress&quot;&gt;
-    &lt;div class=&quot;progress-bar bg-danger w-6/12&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;progress&quot;&gt;
-    &lt;div class=&quot;progress-bar bg-dark w-6/12&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</code> </pre>
+<pre class=''> <code class="language-html rounded">&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link active&quot;&gt;Profile&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Dashboard&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Settings&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Contacts&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;nav-link disabled&quot;&gt;Disabled&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code> </pre>
                     </div>
                 </div>
 
-            </section>
-
-            <section>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center border-b border-gray-200 pb-3">
-                    <div class='card'>
-                        <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Animated background & customization</h5>
-                            <small class='mt-2 text-gray-500'>All of the progress bars can be animated with default tailwind animation classes and you can also customize their colors, height, etc based on your needs.</small>
-                        </div>
-                        <div class="card-body space-y-3">
-                            <div>
-                                <span>Pulse animation</span>
-                                <div class="progress">
-                                    <div class="progress-bar w-5/12 animate-pulse"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span>Custom color</span>
-                                <div class="progress">
-                                    <div class="progress-bar bg-orange-400 w-6/12"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span>Change the border radius</span>
-                                <div class="progress rounded-none">
-                                    <div class="progress-bar bg-danger rounded-none w-7/12"></div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <span>Use more height for your progress</span>
-                                <div class="progress h-5">
-                                    <div class="progress-bar bg-success h-5 w-8/12"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-<pre class=''> <code class="language-html rounded">&lt;div class=&quot;progress&quot;&gt;
-    &lt;div class=&quot;progress-bar w-5/12 animate-pulse &quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;progress&quot;&gt;
-    &lt;div class=&quot;progress-bar bg-orange-400 w-6/12&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;progress h-5&quot;&gt;
-    &lt;div class=&quot;progress-bar bg-success h-5 w-7/12&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;progress rounded-none&quot;&gt;
-    &lt;div class=&quot;progress-bar bg-danger rounded-none w-8/12&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;</code> </pre>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center border-b border-gray-200 pb-3 mt-4">
-                    <div class='card'>
-                        <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Text labels</h5>
-                            <small class='mt-2 text-gray-500'>
-                                Add labels to your progress bars by placing text within the <code class="code">.progress-bar</code>.
-                                <span class="block">
-                                    <span class="text-red-500">*</span>
-                                        We highly recommend adding more height to your progress bar so text labels fit perfectly.
-                                    </span>
-                            </small>
-                        </div>
-                        <div class="card-body space-y-3">
-                            <div>
-                                <div class="progress h-4">
-                                    <div class="progress-bar h-4 w-6/12">50%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-<pre class=''> <code class="language-html rounded">&lt;div class=&quot;progress h-4&quot;&gt;
-    &lt;div class=&quot;progress-bar h-4 w-6/12&quot;&gt;50%&lt;/div&gt;
-&lt;/div&gt;
-</code> </pre>
-                    </div>
-                </div>
             </section>
 
         </main>

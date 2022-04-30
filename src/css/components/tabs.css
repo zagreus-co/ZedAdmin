@@ -1,0 +1,15 @@
+.nav.nav-tabs {
+    @apply flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 space-x-1;
+    .nav-item {
+        .nav-link {
+            @apply inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50;
+
+            &.active {
+                @apply text-theme-primary bg-gray-100;
+            }
+            &.disabled, &:disabled {
+                @apply text-gray-400 cursor-not-allowed;
+            }
+        }
+    }
+}
