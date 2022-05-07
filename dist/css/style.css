@@ -351,8 +351,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }.mr-1{
   margin-right: 0.25rem;
-}.mt-3{
-  margin-top: 0.75rem;
 }.block{
   display: block;
 }.inline-block{
@@ -1180,21 +1178,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(92 104 255 / var(--tw-bg-opacity));
 }.nav.nav-tabs{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }.nav.nav-tabs > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }.nav.nav-tabs{
+  overflow-x: auto;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+  padding-bottom: 0.5rem;
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 500;
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}@media (min-width: 768px){.nav.nav-tabs{
+    flex-wrap: wrap;
+  }.nav.nav-tabs{
+    padding-bottom: 0px;
+  }
 }.nav.nav-tabs .nav-item .nav-link{
   display: inline-block;
   border-top-left-radius: 0.5rem;
