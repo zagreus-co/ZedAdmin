@@ -47,8 +47,7 @@ npm run watch
 - [x] Progress
 - [ ] Tabs
   - [x] Default Tabs
-  - [ ] Basic tabs with underline
-  - [ ] Tabs with underline
+  - [x] Tabs with underline
   - [ ] Tabs with icons
   - [ ] Pills tabs
   - [ ] Full width tabs

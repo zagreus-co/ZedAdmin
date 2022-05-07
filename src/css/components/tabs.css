@@ -2,10 +2,25 @@
     @apply flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 space-x-1;
     .nav-item {
         .nav-link {
-            @apply inline-block p-4 rounded-t-lg hover:text-gray-600 hover:bg-gray-50;
+            @apply inline-block p-4 rounded-t-lg hover:text-gray-600 transition duration-200;
+
+            &:not(.underlined) {
+                @apply hover:bg-gray-50 ;
+
+                &.active {
+                    @apply bg-gray-100;
+                }
+            }
+
+            &.underlined {
+                @apply border-b-2 border-transparent hover:border-gray-300;
+                &.active {
+                    @apply border-b-theme-primary;
+                }
+            }
 
             &.active {
-                @apply text-theme-primary bg-gray-100;
+                @apply text-theme-primary;
             }
             &.disabled, &:disabled {
                 @apply text-gray-400 cursor-not-allowed;

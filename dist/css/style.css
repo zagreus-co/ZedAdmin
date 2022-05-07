@@ -351,6 +351,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }.mr-1{
   margin-right: 0.25rem;
+}.mt-3{
+  margin-top: 0.75rem;
 }.block{
   display: block;
 }.inline-block{
@@ -545,6 +547,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}.underline{
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }.opacity-0{
   opacity: 0;
 }.opacity-100{
@@ -1195,14 +1200,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   padding: 1rem;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
 }.nav.nav-tabs .nav-item .nav-link:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}.nav.nav-tabs .nav-item .nav-link.active{
+}.nav.nav-tabs .nav-item .nav-link:not(.underlined):hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}.nav.nav-tabs .nav-item .nav-link:not(.underlined).active{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}.nav.nav-tabs .nav-item .nav-link.underlined{
+  border-bottom-width: 2px;
+  border-color: transparent;
+}.nav.nav-tabs .nav-item .nav-link.underlined:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}.nav.nav-tabs .nav-item .nav-link.underlined.active{
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(92 104 255 / var(--tw-border-opacity));
+}.nav.nav-tabs .nav-item .nav-link.active{
   --tw-text-opacity: 1;
   color: rgb(92 104 255 / var(--tw-text-opacity));
 }.nav.nav-tabs .nav-item .nav-link.disabled, .nav.nav-tabs .nav-item .nav-link:disabled{
