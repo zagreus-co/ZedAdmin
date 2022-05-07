@@ -1202,6 +1202,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }.nav.nav-tabs .nav-item .nav-link{
   display: inline-block;
+  align-items: center;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
   padding: 1rem;
