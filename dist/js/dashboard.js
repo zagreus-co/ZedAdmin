@@ -15,4 +15,5 @@ document.addEventListener("click", (event) => {
 });
 
 // Scroll to active element [issue #2]
-document.querySelector("nav ul li.active").scrollIntoView({ behavior: 'smooth', block: 'end'});
+const activeElement = document.querySelector("nav ul li.active");
+if (activeElement !== null) activeElement.scrollIntoView({ behavior: 'smooth', block: 'end'});
