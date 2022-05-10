@@ -1237,7 +1237,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }.nav.nav-pills{
   display: flex;
-  flex-wrap: wrap;
+  padding-bottom: 0.5rem;
   text-align: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1248,13 +1248,35 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-text-opacity: 1;
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
-}.nav.nav-pills:not([class*="space-x-"]) > :not([hidden]) ~ :not([hidden]){
+}@media (min-width: 768px){.nav.nav-pills{
+    padding-bottom: 0px;
+  }
+}.nav.nav-pills:not(.nav-fill){
+  flex-wrap: wrap;
+}.nav.nav-pills:not(.nav-fill):not([class*="space-x-"]) > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}.nav.nav-pills:not(.nav-fill) .nav-link{
+  border-radius: 0.5rem;
+}.nav.nav-pills.nav-fill{
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}.nav.nav-pills.nav-fill .nav-item, .nav.nav-pills.nav-fill .nav-link{
+  width: 100%;
+}.nav.nav-pills.nav-fill .nav-item:first-child .nav-link{
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}.nav.nav-pills.nav-fill .nav-item:last-child .nav-link{
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}.nav.nav-pills.nav-fill .nav-link{
+  border-radius: 0px;
+}.nav.nav-pills.nav-fill .nav-link:not([class*="bg-"]){
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }.nav.nav-pills .nav-item .nav-link{
   display: inline-block;
-  border-radius: 0.5rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 1rem;
@@ -1271,7 +1293,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }.nav.nav-pills .nav-item .nav-link.active{
   display: inline-block;
-  border-radius: 0.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(37 99 235 / var(--tw-bg-opacity));
   padding-top: 0.75rem;
