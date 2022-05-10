@@ -1,5 +1,10 @@
 .nav.nav-tabs {
-    @apply flex flex-nowrap pb-2 md:pb-0 md:flex-wrap overflow-x-auto text-sm font-medium text-center text-gray-500 border-b border-gray-200 space-x-1;
+    @apply flex flex-nowrap pb-2 md:pb-0 md:flex-wrap overflow-x-auto text-sm font-medium text-center text-gray-500 border-b border-gray-200;
+    
+    &:not([class*="space-x-"]) {
+        @apply space-x-1;
+    }
+
     .nav-item {
         .nav-link {
             @apply inline-block items-center p-4 rounded-t-lg hover:text-gray-600 transition duration-200;
@@ -21,6 +26,27 @@
 
             &.active {
                 @apply text-theme-primary;
+            }
+            &.disabled, &:disabled {
+                @apply text-gray-400 cursor-not-allowed;
+            }
+        }
+    }
+}
+
+.nav.nav-pills {
+    @apply flex flex-wrap text-sm font-medium text-center text-gray-500 dark:text-gray-400;
+
+    &:not([class*="space-x-"]) {
+        @apply space-x-2;
+    }
+
+    .nav-item {
+        .nav-link {
+            @apply inline-block py-3 px-4 rounded-lg hover:text-gray-900 hover:bg-gray-100 transition duration-200;
+            
+            &.active {
+                @apply inline-block py-3 px-4 text-white bg-blue-600 rounded-lg;
             }
             &.disabled, &:disabled {
                 @apply text-gray-400 cursor-not-allowed;

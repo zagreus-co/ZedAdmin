@@ -49,7 +49,7 @@ npm run watch
   - [x] Default Tabs
   - [x] Tabs with underline
   - [x] Tabs with icons
-  - [ ] Pills tabs
+  - [x] Pills tabs
   - [ ] Full width tabs
   - [ ] Interactive tabs using AlpineJS
 - [ ] Toast
