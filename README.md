@@ -45,7 +45,7 @@ npm run watch
 - [ ] Modal
 - [ ] Pagination
 - [x] Progress
-- [ ] Tabs
+- [x] Tabs
   - [x] Default Tabs
   - [x] Tabs with underline
   - [x] Tabs with icons
