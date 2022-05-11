@@ -315,8 +315,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: -1.5rem;
 }.left-0{
   left: 0px;
-}.col-span-2{
-  grid-column: span 2 / span 2;
 }.my-auto{
   margin-top: auto;
   margin-bottom: auto;
@@ -365,8 +363,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }.grid{
   display: grid;
-}.contents{
-  display: contents;
 }.hidden{
   display: none;
 }.h-14{
@@ -397,14 +393,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 91.666667%;
 }.-rotate-45{
   --tw-rotate: -45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}.scale-90{
-  --tw-scale-x: .9;
-  --tw-scale-y: .9;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}.scale-100{
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }.scale-y-0{
   --tw-scale-y: 0;
@@ -576,8 +564,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 200ms;
 }.duration-100{
   transition-duration: 100ms;
-}.duration-300{
-  transition-duration: 300ms;
 }.ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }.ease-in{
@@ -1323,6 +1309,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: not-allowed;
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}/* RTL Support */body[dir=rtl] .nav.nav-tabs > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 1;
+}body[dir=rtl] .nav.nav-pills:not(.nav-fill) > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 1;
+}body[dir=rtl] .nav.nav-pills.nav-fill .nav-item:first-child .nav-link{
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}body[dir=rtl] .nav.nav-pills.nav-fill .nav-item:last-child .nav-link{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
 }/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap'); *//* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap'); */body {
     background: var(--backgroundColor);
     font-family: 'Nunito', sans-serif;

@@ -81,3 +81,25 @@
         }
     }
 }
+
+/* RTL Support */
+body[dir=rtl] {
+    .nav.nav-tabs {
+        @apply space-x-reverse;
+    }
+
+    .nav.nav-pills {
+        &:not(.nav-fill) {
+            @apply space-x-reverse;
+        }
+
+        &.nav-fill {
+            .nav-item:first-child .nav-link {
+                @apply rounded-l-none rounded-r-lg;
+            }
+            .nav-item:last-child .nav-link {
+                @apply rounded-r-none rounded-l-lg;
+            }
+        }
+    }
+}
