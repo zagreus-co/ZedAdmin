@@ -50,8 +50,8 @@ npm run watch
   - [x] Tabs with underline
   - [x] Tabs with icons
   - [x] Pills tabs
-  - [ ] Full width tabs
-  - [ ] Interactive tabs using AlpineJS
+  - [x] Full width tabs
+  - [x] Interactive tabs using AlpineJS
   - [ ] RTL Support
 - [ ] Toast
 - [ ] Tooltip
