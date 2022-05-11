@@ -315,6 +315,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: -1.5rem;
 }.left-0{
   left: 0px;
+}.col-span-2{
+  grid-column: span 2 / span 2;
 }.my-auto{
   margin-top: auto;
   margin-bottom: auto;
@@ -351,6 +353,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.25rem;
 }.mr-1{
   margin-right: 0.25rem;
+}.ml-auto{
+  margin-left: auto;
 }.block{
   display: block;
 }.inline-block{
@@ -361,6 +365,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }.grid{
   display: grid;
+}.contents{
+  display: contents;
 }.hidden{
   display: none;
 }.h-14{
@@ -391,6 +397,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 91.666667%;
 }.-rotate-45{
   --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.scale-90{
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}.scale-100{
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }.scale-y-0{
   --tw-scale-y: 0;
@@ -562,6 +576,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 200ms;
 }.duration-100{
   transition-duration: 100ms;
+}.duration-300{
+  transition-duration: 300ms;
 }.ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }.ease-in{
@@ -1532,6 +1548,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     left: 0.25rem;
   }.md\:right-1{
     right: 0.25rem;
+  }.md\:col-span-2{
+    grid-column: span 2 / span 2;
   }.md\:block{
     display: block;
   }.md\:w-9\/12{

@@ -491,6 +491,74 @@
                 </div>
 
             </section>
+
+            <section class="mt-4">
+                <div class="grid grid-cols-1 items-center border-b border-gray-200 pb-3">
+                    <div>
+                        <h4 class="font-bold">Interactive tabs</h4>
+                        <p class='block pb-3 mb-3 mt-1'>
+                            Take any of the examples you see above and add the following AlpineJS codes to make fully interactive tabs.
+                        </p>
+                    </div>
+
+                    <div x-data="{tab: 'help'}" class="card">
+                        <ul class="nav nav-tabs mb-4">
+                            <li @click="tab = 'dashboard'" class="nav-item">
+                                <button class="nav-link underlined" :class="tab == 'dashboard' ? 'active' : ''">Dashboard</button>
+                            </li>
+                            <li @click="tab = 'settings'" class="nav-item">
+                                <button class="nav-link underlined" :class="tab == 'settings' ? 'active' : ''">Settings</button>
+                            </li>
+                            <li @click="tab = 'help'" class="nav-item">
+                                <button class="nav-link underlined" :class="tab == 'help' ? 'active' : ''">More help</button>
+                            </li>
+                        </ul>
+                        <div x-show="tab == 'dashboard'" class="card-body"> This could be your dashboard. </div>
+                        <div x-show="tab == 'settings'" class="card-body grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <label for="email_input">New password</label>
+                                <input type="email" class="form-control" id="email_input" placeholder="Please enter your new password">
+                            </div>
+                            <div class="form-group">
+                                <label for="email_input">Repeat new password</label>
+                                <input type="email" class="form-control" id="email_input" placeholder="Please re-enter your new password">
+                            </div>
+                            <div class="md:col-span-2">
+                                <button class="btn btn-success ml-auto">Update password</button>
+                            </div>
+                        </div>
+                        <div x-show="tab == 'help'" class="card-body">
+                            <h5 class='font-bold'>Interactive tabs</h5>
+                            <small class='mt-2 text-gray-500'>
+                                This was just a basic example of creating interactive tabs using AlpineJS.
+                                <br>
+                                Note that you can make this more advanced by using 
+                                <a href="https://alpinejs.dev/directives/transition" class="theme-anchor">Alpine transitions</a>.
+                            </small>
+                        </div>
+                    </div>
+                    <div>
+<pre class=''> <code class="language-html rounded">&lt;div x-data=&quot;{tab: 'help'}&quot; class=&quot;card&quot;&gt;
+    &lt;ul class=&quot;nav nav-tabs mb-4&quot;&gt;
+        &lt;li @click=&quot;tab = 'dashboard'&quot; class=&quot;nav-item&quot;&gt;
+            &lt;button class=&quot;nav-link underlined&quot; :class=&quot;tab == 'dashboard' ? 'active' : ''&quot;&gt;Dashboard&lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li @click=&quot;tab = 'settings'&quot; class=&quot;nav-item&quot;&gt;
+            &lt;button class=&quot;nav-link underlined&quot; :class=&quot;tab == 'settings' ? 'active' : ''&quot;&gt;Settings&lt;/button&gt;
+        &lt;/li&gt;
+        &lt;li @click=&quot;tab = 'help'&quot; class=&quot;nav-item&quot;&gt;
+            &lt;button class=&quot;nav-link underlined&quot; :class=&quot;tab == 'help' ? 'active' : ''&quot;&gt;More help&lt;/button&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    
+    &lt;div x-show=&quot;tab == 'dashboard'&quot; class=&quot;card-body&quot;&gt; ... &lt;/div&gt;
+    &lt;div x-show=&quot;tab == 'settings'&quot; class=&quot;card-body&quot;&gt; ... &lt;/div&gt;
+    &lt;div x-show=&quot;tab == 'help'&quot; class=&quot;card-body&quot;&gt; ... &lt;/div&gt;
+&lt;/div&gt;</code> </pre>
+                    </div>
+                </div>
+
+            </section>
         </main>
 
         <!-- Icons pack -->
