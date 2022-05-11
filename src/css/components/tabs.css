@@ -35,11 +35,9 @@
 }
 
 .nav.nav-pills {
-    @apply flex pb-2 md:pb-0 text-sm font-medium text-center text-gray-500 dark:text-gray-400;
+    @apply flex flex-nowrap pb-2 md:pb-0 md:flex-wrap overflow-x-auto text-sm font-medium text-center text-gray-500 dark:text-gray-400;
 
     &:not(.nav-fill) {
-        @apply flex-wrap;
-
         &:not([class*="space-x-"]) {
             @apply space-x-2;
         }
@@ -62,7 +60,7 @@
         }
         .nav-link {
             @apply rounded-none;
-            
+
             &:not([class*="bg-"]) {
                 @apply bg-gray-50;
             }

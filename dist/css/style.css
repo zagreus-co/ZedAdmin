@@ -1237,6 +1237,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }.nav.nav-pills{
   display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   padding-bottom: 0.5rem;
   text-align: center;
   font-size: 0.875rem;
@@ -1249,10 +1251,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 }@media (min-width: 768px){.nav.nav-pills{
+    flex-wrap: wrap;
+  }.nav.nav-pills{
     padding-bottom: 0px;
   }
-}.nav.nav-pills:not(.nav-fill){
-  flex-wrap: wrap;
 }.nav.nav-pills:not(.nav-fill):not([class*="space-x-"]) > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
