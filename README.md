@@ -29,7 +29,7 @@ npm run watch
 - [x] Dropdown in the sidebar
 - [x] Alert
 - [x] Badge
-- [ ] Breadcrumb
+- [x] Breadcrumb
 - [x] Button
   - [x] Button group
 - [x] Card
