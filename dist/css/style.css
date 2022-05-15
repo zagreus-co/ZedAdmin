@@ -347,6 +347,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }.mb-1{
   margin-bottom: 0.25rem;
+}.mt-3{
+  margin-top: 0.75rem;
 }.mt-5{
   margin-top: 1.25rem;
 }.mr-1{
@@ -680,87 +682,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 }.bg-light{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}.form-control{
-  border-width: 1px;
-  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}.form-control:focus{
-  outline-color: #dbeafe;
-}.form-control:not([class*="rounded-"]){
-  border-radius: 0.25rem;
-}.form-control:not([class*="w-"]){
-  width: 100%;
-}.form-control.form-control-sm{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}.form-control.form-control-lg{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}.form-control:not(.form-control-lg):not(.form-control-sm):not([class*="p-"]):not([class*="px-"]):not([class*="py-"]){
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}.form-control:disabled, .form-control[readonly]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}/* checkboxes & radios */.form-check{
-  display: flex;
-  align-items: center;
-}.form-check > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 0;
-  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}.form-check .form-check-input{
-  height: 1rem;
-  width: 1rem;
-  cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
-}.form-check .form-check-input:checked{
-  --tw-border-opacity: 1;
-  border-color: rgb(92 104 255 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(92 104 255 / var(--tw-bg-opacity));
-}.form-check .form-check-input:focus{
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}.form-check .form-check-input:disabled~.form-check-label{
-  opacity: 0.5;
-}.form-check .form-check-input[type=checkbox]{
-  border-radius: 0.25rem;
-}.form-check .form-check-input[type=radio]{
-  border-radius: 9999px;
-}.form-check .form-check-label {
-        /* @apply inline-block; */
-    }.form-check-inline{
-  margin-right: 0.75rem;
-  display: inline-flex;
-}/* RTL Support: */body[dir=rtl] .form-check > :not([hidden]) ~ :not([hidden]){
-  --tw-space-x-reverse: 1;
-}body[dir=rtl] .form-check-inline {
-        margin-right: unset;
-        margin-left: 0.75rem;
-    }.alert{
+}.alert{
   display: block;
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -796,33 +718,93 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}p{
+}.badge {
+    font-size: 12px;
+    padding: 2px 8px 2px 8px;
+    border-radius: 9999px;
+    vertical-align: middle;
+    font-weight: 700;
+}/* Badge border radius */.badge-rounded{
+  border-radius: 0.25rem;
+}.badge-rounded-sm{
+  border-radius: 0.125rem;
+}.badge-rounded-md{
+  border-radius: 0.375rem;
+}.badge-rounded-lg{
+  border-radius: 0.5rem;
+}.badge-rounded-xl{
+  border-radius: 0.75rem;
+}.badge-rounded-2xl{
+  border-radius: 1rem;
+}.badge-rounded-none{
+  border-radius: 0px;
+}/* Badge colors */.badge-danger, .badge-error{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}.badge-success, .badge-green{
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 250 229 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(5 150 105 / var(--tw-text-opacity));
+}.badge-info, .badge-blue{
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}.badge-primary, .badge-theme{
+  --tw-bg-opacity: 1;
+  background-color: rgb(92 104 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}.badge-warning, .badge-yellow{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(202 138 4 / var(--tw-text-opacity));
+}.badge-purple{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(147 51 234 / var(--tw-text-opacity));
+}.badge-pink{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(219 39 119 / var(--tw-text-opacity));
+}.breadcrumb{
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+
+    /* Define breadcrumb divider content in a variable to make it dynamically changeable from HTML or custom CSS */
+    --breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E");
+}.breadcrumb li.breadcrumb-item a{
+  display: flex;
+  align-items: center;
   font-size: 0.875rem;
   line-height: 1.25rem;
-  letter-spacing: 0.05em;
+  font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
-}h1{
-  font-size: 3.75rem;
-  line-height: 1;
-  font-weight: 800;
-}h2{
-  font-size: 3rem;
-  line-height: 1;
-  font-weight: 700;
-}h3{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  font-weight: 700;
-}h4{
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}h5{
-  font-size: 1.5rem;
-  line-height: 2rem;
-}h6{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}.breadcrumb li.breadcrumb-item a:hover{
+  --tw-text-opacity: 1;
+  color: rgb(77 86 224 / var(--tw-text-opacity));
+}.breadcrumb li.breadcrumb-item a *{
+  margin-right: 0.25rem;
+}.breadcrumb li.breadcrumb-item:not(.active) a:after{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+            content: var(--breadcrumb-divider);
+}.breadcrumb li.breadcrumb-item.active a{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }.btn{
   display: block;
   text-align: center;
@@ -1054,8 +1036,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(249 250 251 / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1066,6 +1046,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 200ms;
 }.card:not([class*="rounded-"]){
   border-radius: 0.375rem;
+}.card:not([class*="bg-"]){
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }.card:not([class*="p-"]):not([class*="px-"]):not([class*="py-"]){
   padding: 1rem;
 }.card .card-header{
@@ -1099,62 +1082,87 @@ Ensure the default browser behavior of the `hidden` attribute.
 }/* RTL Support: */body[dir=rtl] .card .icon-area {
             margin-left: unset;
             margin-right: auto;
-        }.badge {
-    font-size: 12px;
-    padding: 2px 8px 2px 8px;
-    border-radius: 9999px;
-    vertical-align: middle;
-    font-weight: 700;
-}/* Badge border radius */.badge-rounded{
+        }.form-control{
+  border-width: 1px;
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}.form-control:focus{
+  outline-color: #dbeafe;
+}.form-control:not([class*="rounded-"]){
   border-radius: 0.25rem;
-}.badge-rounded-sm{
-  border-radius: 0.125rem;
-}.badge-rounded-md{
-  border-radius: 0.375rem;
-}.badge-rounded-lg{
-  border-radius: 0.5rem;
-}.badge-rounded-xl{
-  border-radius: 0.75rem;
-}.badge-rounded-2xl{
-  border-radius: 1rem;
-}.badge-rounded-none{
-  border-radius: 0px;
-}/* Badge colors */.badge-danger, .badge-error{
+}.form-control:not([class*="w-"]){
+  width: 100%;
+}.form-control.form-control-sm{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}.form-control.form-control-lg{
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}.form-control:not(.form-control-lg):not(.form-control-sm):not([class*="p-"]):not([class*="px-"]):not([class*="py-"]){
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}.form-control:disabled, .form-control[readonly]{
   --tw-bg-opacity: 1;
-  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}.badge-success, .badge-green{
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}/* checkboxes & radios */.form-check{
+  display: flex;
+  align-items: center;
+}.form-check > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}.form-check .form-check-input{
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
-  background-color: rgb(209 250 229 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(5 150 105 / var(--tw-text-opacity));
-}.badge-info, .badge-blue{
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}.badge-primary, .badge-theme{
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}.form-check .form-check-input:checked{
+  --tw-border-opacity: 1;
+  border-color: rgb(92 104 255 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(92 104 255 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}.badge-warning, .badge-yellow{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 249 195 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(202 138 4 / var(--tw-text-opacity));
-}.badge-purple{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(147 51 234 / var(--tw-text-opacity));
-}.badge-pink{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 231 243 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(219 39 119 / var(--tw-text-opacity));
-}.progress{
+}.form-check .form-check-input:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}.form-check .form-check-input:disabled~.form-check-label{
+  opacity: 0.5;
+}.form-check .form-check-input[type=checkbox]{
+  border-radius: 0.25rem;
+}.form-check .form-check-input[type=radio]{
+  border-radius: 9999px;
+}.form-check .form-check-label {
+        /* @apply inline-block; */
+    }.form-check-inline{
+  margin-right: 0.75rem;
+  display: inline-flex;
+}/* RTL Support: */body[dir=rtl] .form-check > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 1;
+}body[dir=rtl] .form-check-inline {
+        margin-right: unset;
+        margin-left: 0.75rem;
+    }.progress{
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -1323,6 +1331,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-right-radius: 0px;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
+}p{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}h1{
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 800;
+}h2{
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+}h3{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}h4{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}h5{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}h6{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap'); *//* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap'); */body {
     background: var(--backgroundColor);
     font-family: 'Nunito', sans-serif;

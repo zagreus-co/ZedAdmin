@@ -4,14 +4,15 @@
 @import "./rtl";
 @import "./variables";
 @import "./utilities";
-@import "./components/inputs";
 @import "./components/alert";
-@import "./components/typography";
+@import "./components/badge";
+@import "./components/breadcrumb";
 @import "./components/button";
 @import "./components/card";
-@import "./components/badge";
+@import "./components/inputs";
 @import "./components/progress";
 @import "./components/tabs";
+@import "./components/typography";
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
 /* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap'); */
