@@ -30,7 +30,7 @@ npm run watch
 - [x] Alert
 - [x] Badge
 - [x] Breadcrumb
-  - [ ] RTL Support
+  - [x] RTL Support
 - [x] Button
   - [x] Button group
 - [x] Card
