@@ -74,6 +74,10 @@ body[dir=rtl] {
 
     .mobile-navbar {
         @apply pr-6 pl-10;
+
+        .dropdown-content {
+            @apply right-auto -left-14 sm:-left-8 md:left-1;
+        }
     }
 
     main {

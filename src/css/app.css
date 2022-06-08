@@ -127,7 +127,7 @@ aside.sidebar {
         }
     }
     .dropdown-content {
-        @apply absolute w-80 z-20 bg-white border-2 border-gray-100 rounded-md shadow-lg top-6 mt-1;
+        @apply absolute -right-14 sm:-right-8 md:right-1 w-80 z-20 bg-white border-2 border-gray-100 rounded-md shadow-lg top-6 mt-1;
     }
 }
 
