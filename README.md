@@ -54,5 +54,6 @@ npm run watch
   - [x] Full width tabs
   - [x] Interactive tabs using AlpineJS
   - [x] RTL Support
+- [ ] Table
 - [ ] Toast
 - [ ] Tooltip
