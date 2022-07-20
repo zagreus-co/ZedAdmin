@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#5c68ff" />
-        <title>ZedAdmin - Admin Panel template with TailwindCSS</title>
+        <title>ZedAdmin - Table component with TailwindCSS</title>
         <link rel="stylesheet" href="../dist/css/style.css" />
     </head>
     <body>
@@ -173,7 +173,7 @@
                             Badges
                         </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="./breadcrumb.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Breadcrumb
@@ -197,7 +197,7 @@
                             Progress
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./tables.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Tables
@@ -215,119 +215,274 @@
         </aside>
 
         <main>
-            <h4 class="font-bold">Breadcrumb components</h4>
+            <h4 class="font-bold">Table components</h4>
             <p class='block border-b border-gray-200 pb-3 mb-3'>
-                Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.
+                Documentation and examples for opt-in styling of tables in the ZedAdmin and TailwindCSS.
             </p>
 
             <section class="mt-2">
                 <div class="grid grid-cols-1 items-center border-b border-gray-200">
                     <div class='card'>
                         <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Default breadcrumb</h5>
+                            <h5 class='font-bold'>Default table</h5>
                             <small class='mt-2 text-gray-500'>
-                                Use an ordered or unordered list with linked list items to create a minimally styled breadcrumb. Use our utilities to add additional styles as desired.
+                                Using the most basic table markup, here’s how <code class="code">.table-based</code> tables look in Bootstrap.
                             </small>
                         </div>
                         <div class="card-body">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                                <li class="breadcrumb-item"><a href="#">Programming</a></li>
-                                <li class="breadcrumb-item active">Active</li>
-                            </ol>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                #
+                                            </th>
+                                            <th>
+                                                First Name
+                                            </th>
+                                            <th>
+                                                Last Name
+                                            </th>
+                                            <th>
+                                                Username
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 1 </td>
+                                            <td>
+                                                <a class="theme-anchor" target="_blank" href="https://mehrab.xyz">Mehrab</a>
+                                            </td>
+                                            <td> HP </td>
+                                            <td> <a class="theme-anchor" target="_blank" href="https://twitter.com/mehrab_xyz">@mehrab_xyz</a> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2 </td>
+                                            <td> John </td>
+                                            <td> Doe </td>
+                                            <td>@johndoe</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- end of table wrapper -->
                         </div>
                     </div>
                     <div>
-<pre class=''> <code class="language-html rounded">&lt;ol class=&quot;breadcrumb&quot;&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Programming&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item active&quot;&gt;Active&lt;/li&gt;
-&lt;/ol&gt;</code> </pre>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mt-4">
-                <div class="grid grid-cols-1 items-center border-b border-gray-200">
-                    <div class='card'>
-                        <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Use custom divider</h5>
-                            <small class='mt-2 text-gray-500'>
-                                Dividers are automatically added in CSS through 
-                                <a class="theme-anchor" href="https://developer.mozilla.org/en-US/docs/Web/CSS/::after">::after</a>
-                                and
-                                <a class="theme-anchor" href="https://developer.mozilla.org/en-US/docs/Web/CSS/content">content</a>.
-                                <br>
-                                They can be changed by modifying a local CSS custom property <code class="code">--breadcrumb-divider</code> if needed.
-                            </small>
-                        </div>
-                        <div class="card-body">
-                            <ol style="--breadcrumb-divider: '/'" class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                                <li class="breadcrumb-item"><a href="#">Programming</a></li>
-                                <li class="breadcrumb-item active">Active</li>
-                            </ol>
-                        </div>
-                    </div>
-                    <div>
-<pre class=''> <code class="language-html rounded">&lt;ol  style=&quot;--breadcrumb-divider: '/'&quot; class=&quot;breadcrumb&quot;&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Programming&lt;/a&gt;&lt;/li&gt;
-    &lt;li class=&quot;breadcrumb-item active&quot;&gt;Active&lt;/li&gt;
-&lt;/ol&gt;</code> </pre>
-                    </div>
-                </div>
-            </section>
-
-            <section class="mt-4">
-                <div class="grid grid-cols-1 items-center border-b border-gray-200">
-                    <div class='card'>
-                        <div class="card-header card-block mb-3">
-                            <h5 class='font-bold'>Combine with card component</h5>
-                            <small class='mt-2 text-gray-500'>
-                                Alternatively, you can also use the breadcrumb components with other components like cards to have a solid background.
-                            </small>
-                        </div>
-                    </div>
-
-                    <div class="card rounded-lg mt-3">
-                        <div class="card-body">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item">
-                                    <a href="#">
-                                        <ion-icon name="home"></ion-icon>
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="breadcrumb-item"><a href="#">Library</a></li>
-                                <li class="breadcrumb-item"><a href="#">Programming</a></li>
-                                <li class="breadcrumb-item active">Active</li>
-                            </ol>
-                        </div>
-                    </div>
-
-                    <div>
-<pre class=''> <code class="language-html rounded">&lt;div class="card rounded-lg"&gt;
-    &lt;ol class=&quot;breadcrumb&quot;&gt;
-        &lt;li class=&quot;breadcrumb-item&quot;&gt;
-            &lt;a href=&quot;#&quot;&gt;
-                &lt;ion-icon name=&quot;home&quot;&gt;&lt;/ion-icon&gt;
-                Home
-            &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;breadcrumb-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Programming&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;breadcrumb-item active&quot;&gt;Active&lt;/li&gt;
-    &lt;/ol&gt;
+<pre class=''> <code class="language-html rounded">&lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;First Name&lt;/th&gt;
+                &lt;th&gt;Last Name&lt;/th&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Mehrab&lt;/td&gt;
+                &lt;td&gt;HP&lt;/td&gt;
+                &lt;td&gt;@mehrab_xyz&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;@johndoe&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
 &lt;/div&gt;</code> </pre>
                     </div>
                 </div>
             </section>
 
+            <section class="mt-4">
+                <div class="grid grid-cols-1 items-center border-b border-gray-200">
+                    <div class='card'>
+                        <div class="card-header card-block mb-3">
+                            <h5 class='font-bold'>Striped rows</h5>
+                            <small class='mt-2 text-gray-500'>
+                                Add <code class="code">.table-striped</code> to table element will result in zebra-striping to any table row within the <code class="code">&lt;tbody&gt;</code>.
+                            </small>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                #
+                                            </th>
+                                            <th>
+                                                First Name
+                                            </th>
+                                            <th>
+                                                Last Name
+                                            </th>
+                                            <th>
+                                                Username
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 1 </td>
+                                            <td>
+                                                <a class="theme-anchor" target="_blank" href="https://mehrab.xyz">Mehrab</a>
+                                            </td>
+                                            <td> HP </td>
+                                            <td> <a class="theme-anchor" target="_blank" href="https://twitter.com/mehrab_xyz">@mehrab_xyz</a> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2 </td>
+                                            <td> John </td>
+                                            <td> Doe </td>
+                                            <td>@johndoe</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 3 </td>
+                                            <td> Elon </td>
+                                            <td> Musk </td>
+                                            <td>@elonmusk</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 4 </td>
+                                            <td> Steve </td>
+                                            <td> Jobs </td>
+                                            <td>RIP 🖤</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- end of table wrapper -->
+                        </div>
+                    </div>
+                    <div>
+<pre class=''> <code class="language-html rounded">&lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-striped&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;First Name&lt;/th&gt;
+                &lt;th&gt;Last Name&lt;/th&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Mehrab&lt;/td&gt;
+                &lt;td&gt;HP&lt;/td&gt;
+                &lt;td&gt;@mehrab_xyz&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;@johndoe&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code> </pre>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mt-4">
+                <div class="grid grid-cols-1 items-center border-b border-gray-200">
+                    <div class='card'>
+                        <div class="card-header card-block mb-3">
+                            <h5 class='font-bold'>Hoverable rows</h5>
+                            <small class='mt-2 text-gray-500'>
+                                Add <code class="code">.table-hover</code> to enable a hover state on table rows within a <code class="code">&lt;tbody&gt;</code>.
+                            </small>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                #
+                                            </th>
+                                            <th>
+                                                First Name
+                                            </th>
+                                            <th>
+                                                Last Name
+                                            </th>
+                                            <th>
+                                                Username
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 1 </td>
+                                            <td>
+                                                <a class="theme-anchor" target="_blank" href="https://mehrab.xyz">Mehrab</a>
+                                            </td>
+                                            <td> HP </td>
+                                            <td> <a class="theme-anchor" target="_blank" href="https://twitter.com/mehrab_xyz">@mehrab_xyz</a> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2 </td>
+                                            <td> John </td>
+                                            <td> Doe </td>
+                                            <td>@johndoe</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 3 </td>
+                                            <td> Elon </td>
+                                            <td> Musk </td>
+                                            <td>@elonmusk</td>
+                                        </tr>
+                                        <tr>
+                                            <td> 4 </td>
+                                            <td> Steve </td>
+                                            <td> Jobs </td>
+                                            <td>RIP 🖤</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- end of table wrapper -->
+                        </div>
+                    </div>
+                    <div>
+<pre class=''> <code class="language-html rounded">&lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table table-hover&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;First Name&lt;/th&gt;
+                &lt;th&gt;Last Name&lt;/th&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Mehrab&lt;/td&gt;
+                &lt;td&gt;HP&lt;/td&gt;
+                &lt;td&gt;@mehrab_xyz&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;@johndoe&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code> </pre>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- Icons pack -->
