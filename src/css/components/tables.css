@@ -1,0 +1,25 @@
+.table-responsive {
+    @apply overflow-scroll;
+}
+
+.table {
+    @apply w-full text-left;
+
+    thead {
+        @apply border-b;
+
+        tr th {
+            @apply text-sm font-medium text-gray-900 px-6 py-4;
+        }
+    }
+
+    tbody {
+        tr {
+            @apply border-b; /* hover:bg-gray-50 transition duration-75; */
+            
+            td {
+                @apply text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap;
+            }
+        }
+    }
+}

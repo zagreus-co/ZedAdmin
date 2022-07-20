@@ -5,8 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="#5c68ff" />
-        <title>ZedAdmin - Admin Panel template with TailwindCSS</title>
-        <link rel="stylesheet" href="dist/css/style.css" />
+        <title>ZedAdmin - Table component with TailwindCSS</title>
+        <link rel="stylesheet" href="../dist/css/style.css" />
     </head>
     <body>
 
@@ -102,14 +102,14 @@
             <nav>
                 <ul>
                     <li class="badge">Main Menu</li>
-                    <li class="active">
-                        <a href="./index.html">
+                    <li>
+                        <a href="../index.html">
                             <ion-icon name="planet"></ion-icon>
                             Dashboard
                         </a>
                     </li>
                     <li>
-                        <a href="./index-rtl.html">
+                        <a href="../index-rtl.html">
                             <ion-icon class="-rotate-45" name="planet"></ion-icon>
                             RTL Dashboard
                         </a>
@@ -142,18 +142,18 @@
                             </a>
                         </li>
                         <div x-show="isOpen" class="dropdown-items">
-                            <a href="./pages/login.html">
+                            <a href="../pages/login.html">
                                 <ion-icon name="return-down-forward"></ion-icon>           
                                 Login
                             </a>
-                            <a href="./pages/register.html">
+                            <a href="../pages/register.html">
                                 <ion-icon name="return-down-forward"></ion-icon>           
                                 Register
                             </a>
                         </div>
                     </ul>
                     <li>
-                        <a href="./pages/blank.html">
+                        <a href="../pages/blank.html">
                             <ion-icon name="square"></ion-icon>
                             Blank
                         </a>
@@ -162,49 +162,43 @@
                     <li class="badge">Components</li>
 
                     <li>
-                        <a href="./components/alert.html">
+                        <a href="./alert.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Alerts
                         </a>
                     </li>
                     <li>
-                        <a href="./components/badge.html">
+                        <a href="./badge.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Badges
                         </a>
                     </li>
-                    <li>
-                        <a href="./components/breadcrumb.html">
+                    <li class="active">
+                        <a href="./breadcrumb.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Breadcrumb
                         </a>
                     </li>
                     <li>
-                        <a href="./components/button.html">
+                        <a href="./button.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Buttons
                         </a>
                     </li>
                     <li>
-                        <a href="./components/input.html">
+                        <a href="./input.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Inputs
                         </a>
                     </li>
                     <li>
-                        <a href="./components/progress.html">
+                        <a href="./progress.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Progress
                         </a>
                     </li>
                     <li>
-                        <a href="./components/tables.html">
-                            <ion-icon name="extension-puzzle-outline"></ion-icon>
-                            Tables
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./components/tabs.html">
+                        <a href="./tabs.html">
                             <ion-icon name="extension-puzzle-outline"></ion-icon>
                             Tabs
                         </a>
@@ -215,154 +209,87 @@
         </aside>
 
         <main>
-            <header class="flex justify-between items-center w-full">
-                <div class="flex items-center">
-                    <!-- if your user doesnt have any avatar, you can uncomment th code bellow -->
-                    <!-- <span class="bg-theme-primary text-white py-3 px-4 rounded-full">M</span> -->
-                    <img src="dist/img/mehrab.jpg" class="h-14 w-14 rounded-full" alt="User Avatar">
+            <h4 class="font-bold">Table components</h4>
+            <p class='block border-b border-gray-200 pb-3 mb-3'>
+                Documentation and examples for opt-in styling of tables in the ZedAdmin and TailwindCSS.
+            </p>
 
-                    <div class="ml-5">
-                        <h4 class="font-bold">Hello Mehrab!</h4>
-                        <small class="text-gray-500">These are stats for your dashboard</small>
-                    </div>
-                </div>
-                <div class="hidden md:block">
-                    <button class="btn btn-lg btn-primary">+ Add new task</button>
-                </div>
-            </header>
-            
-            <!-- Top cards section -->
-            <section class="mt-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-                    <div class="card hover:shadow">
-                        <div class="card-header">
-                            <h5>View Our Job</h5>
-
-                            <span class="icon-area">
-                                👀
-                            </span>
+            <section class="mt-2">
+                <div class="grid grid-cols-1 items-center border-b border-gray-200">
+                    <div class='card'>
+                        <div class="card-header card-block mb-3">
+                            <h5 class='font-bold'>Default table</h5>
+                            <small class='mt-2 text-gray-500'>
+                                Using the most basic table markup, here’s how <code class="code">.table-based</code> tables look in Bootstrap.
+                            </small>
                         </div>
                         <div class="card-body">
-                            <h6 class="font-bold inline-block">24.5k </h6>
-                            <span class="badge badge-danger inline-block">-21%</span>
-                        </div>
-                    </div>
-
-                    <div class="card hover:shadow">
-                        <div class="card-header">
-                            <h5>View Our Job</h5>
-                            <span class="icon-area">
-                                🧳
-                            </span>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="font-bold inline-block">24.5k </h6>
-                            <span class="badge badge-success inline-block">-21%</span>
-                        </div>
-                    </div>
-
-                    <div class="card hover:shadow">
-                        <div class="card-header">
-                            <h5>View Our Job</h5>
-                            <span class="icon-area">
-                                🎉
-                            </span>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="font-bold inline-block">24.5k </h6>
-                            <span class="badge badge-yellow inline-block">-21%</span>
-                        </div>
-                    </div>
-
-                    <div class="card hover:shadow">
-                        <div class="card-header">
-                            <h5>View Our Job</h5>
-                            <span class="icon-area">
-                                🚀
-                            </span>
-                        </div>
-                        <div class="card-body">
-                            <h6 class="font-bold inline-block">24.5k </h6>
-                            <span class="badge badge-info inline-block">-21%</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Second section -->
-            <section class="mt-6 grid grid-cols-1 lg:grid-cols-12 gap-4">
-                <div class="lg:col-span-8">
-                    <div class="card hover:shadow">
-                        <div class="card-header justify-between">
-                            <h5 class='font-bold flex items-center'>
-                                <ion-icon class='text-gray-400 mr-2' name="stats-chart"></ion-icon>
-                                Website analytics
-                            </h5>
-    
-                            <button class="pt-2">
-                                <ion-icon name="ellipsis-horizontal"></ion-icon>
-                            </button>
-                        </div>
-                        <div class="card-body">
-                            <canvas id="analyticsChart"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:col-span-4">
-                    <div class="card hover:shadow">
-                        <div class="card-header justify-between mb-4">
-                            <h5 class='font-bold flex items-center'>
-                                <ion-icon class='text-gray-400 mr-2' name="notifications"></ion-icon>
-                                Recent notifications
-                            </h5>
-    
-                            <button class="pt-2">
-                                <ion-icon name="ellipsis-horizontal"></ion-icon>
-                            </button>
-                        </div>
-                        <div class="card-body space-y-3">
-
-                            <div class="card card-bg-gray flex-card items-center">
-                                <span class="border py-1 px-2 border-gray-200 rounded-full mr-3">
-                                    <ion-icon class='mt-1' name="dice-outline"></ion-icon>
-                                </span>
-                                <div>
-                                    <div class="card-header text-lg font-bold">This notification title</div>
-                                    <div class="card-body">
-                                        This is notification body, what do you think about it?
-                                    </div>
-                                </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                #
+                                            </th>
+                                            <th>
+                                                First Name
+                                            </th>
+                                            <th>
+                                                Last Name
+                                            </th>
+                                            <th>
+                                                Username
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 1 </td>
+                                            <td>
+                                                <a class="theme-anchor" target="_blank" href="https://mehrab.xyz">Mehrab</a>
+                                            </td>
+                                            <td> HP </td>
+                                            <td> <a class="theme-anchor" target="_blank" href="https://twitter.com/mehrab_xyz">@mehrab_xyz</a> </td>
+                                        </tr>
+                                        <tr>
+                                            <td> 2 </td>
+                                            <td> John </td>
+                                            <td> Doe </td>
+                                            <td>@johndoe</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-
-                            <div class="card card-bg-gray flex-card items-center">
-                                <span class="border py-1 px-2 border-gray-200 rounded-full mr-3">
-                                    <ion-icon class='mt-1' name="dice-outline"></ion-icon>
-                                </span>
-                                <div>
-                                    <div class="card-header text-lg font-bold">This notification title</div>
-                                    <div class="card-body">
-                                        This is notification body, what do you think about it?
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card card-bg-gray flex-card items-center">
-                                <span class="border py-1 px-2 border-gray-200 rounded-full mr-3">
-                                    <ion-icon class='mt-1' name="dice-outline"></ion-icon>
-                                </span>
-                                <div>
-                                    <div class="card-header text-lg font-bold">This notification title</div>
-                                    <div class="card-body">
-                                        This is notification body, what do you think about it?
-                                    </div>
-                                </div>
-                            </div>
-
+                            <!-- end of table wrapper -->
                         </div>
-
-                        <div class="card-footer text-center">
-                            <a class='mt-4 block text-theme-primary hover:text-theme-darked-primary' href="#">View all</a>
-                        </div>
+                    </div>
+                    <div>
+<pre class=''> <code class="language-html rounded">&lt;div class=&quot;table-responsive&quot;&gt;
+    &lt;table class=&quot;table&quot;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;First Name&lt;/th&gt;
+                &lt;th&gt;Last Name&lt;/th&gt;
+                &lt;th&gt;Username&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;1&lt;/td&gt;
+                &lt;td&gt;Mehrab&lt;/td&gt;
+                &lt;td&gt;HP&lt;/td&gt;
+                &lt;td&gt;@mehrab_xyz&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;2&lt;/td&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;@johndoe&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</code> </pre>
                     </div>
                 </div>
             </section>
@@ -370,11 +297,13 @@
 
         <!-- Icons pack -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <!-- ChartJS -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
-        <script src='./dist/js/alpine@3.min.js'></script>
-        <script src='./dist/js/dashboard.js'></script>
-        <script src='./dist/js/dashboard-chart.js'></script>
+        <!-- HighlightJS -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css">
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+
+        <script src='../dist/js/alpine@3.min.js'></script>
+        <script src='../dist/js/dashboard.js'></script>
 
     </body>
 </html>
