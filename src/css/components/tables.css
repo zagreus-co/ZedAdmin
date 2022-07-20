@@ -15,11 +15,21 @@
 
     tbody {
         tr {
-            @apply border-b; /* hover:bg-gray-50 transition duration-75; */
-            
+            @apply border-b;
+
             td {
                 @apply text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap;
             }
         }
+    }
+
+    /* Advanced options: */
+
+    &.table-striped tbody tr:nth-child(odd) {
+        @apply bg-gray-50;
+    }
+
+    &.table-hover tbody tr {
+        @apply hover:bg-gray-100 transition duration-75;
     }
 }
