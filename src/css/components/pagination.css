@@ -5,10 +5,14 @@
         /* rounded-l-lg */
         .page-link {
             @apply rounded-none py-1 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 transition duration-200;
-            
-            &.active {
-                @apply bg-theme-primary text-white;
-            }
+        }
+
+        &.active .page-link {
+            @apply bg-theme-primary text-white;
+        }
+
+        &.disabled .page-link {
+            @apply opacity-70 cursor-not-allowed pointer-events-none;
         }
 
         &:first-child .page-link {
