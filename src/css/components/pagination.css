@@ -2,7 +2,6 @@
     @apply flex -space-x-px;
 
     .page-item {
-        /* rounded-l-lg */
         .page-link {
             @apply rounded-none leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 transition duration-200;
         }
@@ -37,5 +36,19 @@
 
     &:not(.pagination-lg):not(.pagination-sm) .page-item .page-link {
         @apply py-1 px-3;
+    }
+}
+
+/* RTL Support */
+body[dir=rtl] {
+    .pagination {
+        .page-item {
+            &:first-child .page-link {
+                @apply rounded-l-none rounded-r-md;
+            }
+            &:last-child .page-link {
+                @apply rounded-r-none rounded-l-md;
+            }
+        }
     }
 }
