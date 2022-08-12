@@ -224,25 +224,60 @@
             <header class="flex justify-between items-center w-full">
                 <div class="flex items-center">
                     <div class="">
-                        <h4 class="font-bold">Blank page</h4>
-                        <small class="text-gray-500">Lorem ipsum can be in here</small>
+                        <h4 class="font-bold">Pagination</h4>
+                        <small class="text-gray-500">Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</small>
                     </div>
                 </div>
             </header>
 
             <!-- Content section -->
             <section class="mt-6">
-                Blank page is here
+                <div class="grid grid-cols-1 items-center border-b border-gray-200 pb-1">
+                    <div class='card'>
+                        <div class="card-header card-block pb-2 mb-3 border-b border-gray-100">
+                            <h5 class='font-bold'>Default & simple examples</h5>
+                            <small>
+                                Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code class="code">&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.
+                                <br>
+                                In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive aria-label for the <code class="code">&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code class="code">aria-label="Search results pages"</code>.
+                            </small>
+                        </div>
+                        <div class="card-body grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div>
+                        <pre class=''> <code class="language-html rounded">&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Previous&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code> </pre>
+                    </div>
+                </div>
             </section>
         </main>
 
         <!-- Icons pack -->
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <!-- ChartJS -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+        
+        <!-- HighlightJS -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/styles/atom-one-dark.min.css">
+        <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.4.0/build/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+        
         <script src='../dist/js/alpine@3.min.js'></script>
         <script src='../dist/js/dashboard.js'></script>
-        <script src='../dist/js/dashboard-chart.js'></script>
-
     </body>
 </html>

@@ -1,0 +1,21 @@
+.pagination {
+    @apply inline-flex -space-x-px;
+
+    .page-item {
+        /* rounded-l-lg */
+        .page-link {
+            @apply rounded-none py-1 px-3 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 transition duration-200;
+            
+            &.active {
+                @apply bg-theme-primary text-white;
+            }
+        }
+
+        &:first-child .page-link {
+            @apply rounded-l-md;
+        }
+        &:last-child .page-link {
+            @apply rounded-r-md;
+        }
+    }
+}

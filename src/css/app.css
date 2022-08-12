@@ -10,6 +10,7 @@
 @import "./components/button";
 @import "./components/card";
 @import "./components/inputs";
+@import "./components/pagination";
 @import "./components/progress";
 @import "./components/tables";
 @import "./components/tabs";
