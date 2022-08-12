@@ -44,7 +44,7 @@ npm run watch
   - [ ] Switch
   - [ ] Upload
 - [ ] Modal
-- [ ] Pagination
+- [x] Pagination
 - [x] Progress
 - [x] Tabs
   - [x] Default Tabs
