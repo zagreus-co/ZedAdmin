@@ -255,9 +255,9 @@
                                 
                                 <!-- Modal container -->
                                 <div x-show="showModal" class="modal">
-                                    <!-- Modal inner -->
+                                    <!-- Modal card -->
                                     <div class="modal-card" @click.away="showModal = false" x-transition:enter="motion-safe:ease-out duration-300" x-transition:enter-start="opacity-0 scale-90" x-transition:enter-end="opacity-100 scale-100">
-                                        <!-- Title / Close-->
+                                        <!-- Modal header -->
                                         <header class="modal-header">
                                             <h5 class="mr-3 text-black max-w-none">Modal header</h5>
                                             <button type="button" class="text-red-600 hover:text-red-700" @click="showModal = false">X</button>
@@ -276,9 +276,9 @@
                                             <button @click="showModal = false" class="btn btn-sm btn-outline-danger">Cancel</button>
                                         </footer>
                                     </div>
-                                    <!-- -->
+                                    <!-- End of modal card -->
                                 </div>
-                                <!-- End modal container -->
+                                <!-- End of modal container -->
                             </div>
 
                         </div>
