@@ -1,0 +1,21 @@
+.modal {
+    @apply fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-black bg-opacity-50;
+
+    .modal-card {
+        @apply w-3/4 lg:w-2/4 px-6 py-4 mx-auto bg-white rounded shadow-lg;
+
+        .modal-header {
+            @apply flex items-center justify-between border-b border-gray-200 pb-4 mb-3;
+        }
+
+        .modal-body {
+            @apply mt-2;
+        }
+
+        .modal-footer {
+            @apply flex flex-row-reverse mt-3 space-x-1 space-x-reverse;
+        }
+
+    }
+    
+}
