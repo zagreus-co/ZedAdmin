@@ -43,7 +43,7 @@ npm run watch
   - [ ] Range slider
   - [ ] Switch
   - [ ] Upload
-- [ ] Modal
+- [x] Modal
 - [x] Pagination
 - [x] Progress
 - [x] Tabs

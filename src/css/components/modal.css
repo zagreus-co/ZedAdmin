@@ -1,0 +1,45 @@
+.modal {
+    @apply fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-black bg-opacity-50;
+
+    .modal-card {
+        @apply px-6 py-4 mx-auto bg-white rounded shadow-lg;
+
+        &:not(.modal-xl):not(.modal-lg):not(.modal-sm) {
+            @apply w-3/4 lg:w-2/4;
+        }
+
+        &.modal-sm {
+            @apply w-3/5 lg:w-1/4;
+        }
+
+        &.modal-lg {
+            @apply w-5/6 lg:w-3/5;
+        }
+
+        &.modal-xl {
+            @apply w-11/12 lg:w-3/4;
+        }
+
+        .modal-header {
+            @apply flex items-center justify-between border-b border-gray-200 pb-4 mb-3;
+        }
+
+        .modal-body {
+            @apply mt-2;
+        }
+
+        .modal-footer {
+            @apply flex flex-row-reverse mt-3 space-x-1 space-x-reverse;
+        }
+
+    }
+    
+}
+
+body[dir=rtl] {
+    .modal .modal-card {
+        .modal-footer {
+            @apply space-x-1;
+        }
+    }
+}
