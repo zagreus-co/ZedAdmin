@@ -35,3 +35,11 @@
     }
     
 }
+
+body[dir=rtl] {
+    .modal .modal-card {
+        .modal-footer {
+            @apply space-x-1;
+        }
+    }
+}
