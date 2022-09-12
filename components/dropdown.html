@@ -253,27 +253,44 @@
                                 <!-- Dropdown menu -->
                                 <div x-show="open" @click.outside="open = false" class="dropdown">
                                     <ul class="dropdown-menu">
-                                      <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">Dashboard</a>
-                                      </li>
-                                      <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">Settings</a>
-                                      </li>
-                                      <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">Earnings</a>
-                                      </li>
-                                      <li>
-                                        <a href="javascript:void(0)" class="dropdown-item">Sign out</a>
-                                      </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Dashboard</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Settings</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Earnings</a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0)" class="dropdown-item">Sign out</a>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
-                        <pre class=''> <code class="language-html rounded">
-                            
-                        </code> </pre>
+                        <pre class=''> <code class="language-html rounded">&lt;div x-data=&quot;{open: false}&quot; class=&quot;dropdown-container&quot;&gt;
+    &lt;button @click=&quot;open = !open&quot; class=&quot;btn btn-sm btn-primary&quot; type=&quot;button&quot;&gt;Dropdown button &lt;ion-icon name=&quot;chevron-down-outline&quot;&gt;&lt;/ion-icon&gt; &lt;/button&gt;
+    &lt;!-- Dropdown menu --&gt;
+    &lt;div x-show=&quot;open&quot; @click.outside=&quot;open = false&quot; class=&quot;dropdown&quot;&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Dashboard&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Settings&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Earnings&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href=&quot;#&quot; class=&quot;dropdown-item&quot;&gt;Sign out&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code> </pre>
                     </div>
                 </div>
             </section>
