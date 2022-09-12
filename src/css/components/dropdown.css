@@ -1,0 +1,15 @@
+.dropdown-container {
+    @apply relative;
+
+    .dropdown {
+        @apply absolute z-10 bg-white rounded divide-y divide-gray-100 shadow;
+
+        .dropdown-menu {
+            @apply py-1 text-sm text-gray-700;
+
+            .dropdown-item {
+                @apply block py-2 px-8 hover:bg-gray-100 w-full;
+            }
+        }
+    }
+}
