@@ -8,6 +8,7 @@
 @import "./components/badge";
 @import "./components/breadcrumb";
 @import "./components/button";
+@import "./components/dropdown";
 @import "./components/card";
 @import "./components/inputs";
 @import "./components/modal";
