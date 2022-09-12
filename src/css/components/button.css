@@ -1,5 +1,5 @@
 .btn {
-    @apply text-center block transition-all ease-in-out duration-200;
+    @apply inline-flex items-center justify-center transition-all ease-in-out duration-200;
 
     &:not([class*="rounded-"]) {
         @apply rounded-md;
