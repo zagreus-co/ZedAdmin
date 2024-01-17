@@ -1,22 +1,15 @@
-module.exports = {
-  content: [
-    "*.html",
-    "./pages/*.html",
-    "./components/*.html",
-  ],
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      colors: {
-        theme: {
-          'secondary': "#f8f9ff",
-          'primary': "#5c68ff",
-          'darked-primary': "#4d56e0",
-          'gray': "#fafafa"
-        }
-      }
+    screens: {
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1200px",
+      "2xl": "1400px",
     },
+    extend: {},
   },
-  plugins: [
-    require('postcss-import')
-  ],
-}
+  plugins: [],
+};

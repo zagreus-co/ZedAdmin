@@ -1,16 +1,32 @@
 {
+  "name": "zed-admin",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "postcss --config ./ -o ./dist/css/style.css ./src/css/app.css",
-    "watch": "postcss --config ./ -o ./dist/css/style.css ./src/css/app.css --watch"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "cssnano": "^5.1.9",
-    "postcss": "^8.4.14",
-    "postcss-cli": "^9.1.0",
-    "tailwindcss": "^3.0.18"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "postcss-import": "^14.0.2"
+    "axios": "^1.6.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.2",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.8"
   }
 }

@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "IRANSansWeb";
+    src: url("../font/IRANSansWeb.woff") format("woff");
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: "IRANSansWeb";
+    src: url("../font/IRANSansWeb-Bold.woff") format("woff");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "IRANSansWeb";
+    src: url("../font/IRANSansWeb-Black.woff") format("woff");
+    font-weight: 900;
+  }
+
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    direction: ltr;
+    font-family: "Lato";
+  }
+}

@@ -2,19 +2,19 @@
 
 > This project is under heavy development, but you can still check the demo, open an issue, or check the issues tab to find a good way to contribute.
 
-# ZedAdmin - TailwindCSS Admin Panel
+# zed-admin - TailwindCSS Admin Panel
 
-![](https://zagreus.company/files/ZedAdmin.png)
+![](https://zagreus.company/files/zed-admin.png)
 
-![](https://img.shields.io/github/stars/zagreus-co/ZedAdmin.svg) ![](https://img.shields.io/github/forks/zagreus-co/ZedAdmin.svg) ![](https://img.shields.io/github/tag/zagreus-co/ZedAdmin.svg) ![](https://img.shields.io/github/release/zagreus-co/ZedAdmin.svg) ![](https://img.shields.io/github/issues/zagreus-co/ZedAdmin.svg)
+![](https://img.shields.io/github/stars/zagreus-co/zed-admin.svg) ![](https://img.shields.io/github/forks/zagreus-co/zed-admin.svg) ![](https://img.shields.io/github/tag/zagreus-co/zed-admin.svg) ![](https://img.shields.io/github/release/zagreus-co/zed-admin.svg) ![](https://img.shields.io/github/issues/zagreus-co/zed-admin.svg)
 
 ---
 
 ### Installing
-**ZedAdmin** is like any other HTML Admin Panel that you have been used by today. You could clone or download the source code and start building your amazing admin panels with it!
+**zed-admin** is like any other HTML Admin Panel that you have been used by today. You could clone or download the source code and start building your amazing admin panels with it!
 
 ### Development or customization
-If you want to customize ZedAdmin, add or edit a few classes, you need `NodeJS` to build the project.
+If you want to customize zed-admin, add or edit a few classes, you need `NodeJS` to build the project.
 under the hood, the project is built with PostCSS, so if you want to create some changes, you have to edit `src/css` folder and use the command below to build your project:
 ```
 npm run dev
