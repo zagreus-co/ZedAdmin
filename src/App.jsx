@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Loading from "./pages/loading";
+import { DashboardLayout } from "./pages/pagesMap";
 
 function App() {
   return (
@@ -10,10 +11,19 @@ function App() {
           path="/"
           element={
             <Suspense fallback={<Loading />}>
-              <p>dashboard</p>
+              <DashboardLayout />
             </Suspense>
           }
-        />
+        >
+          <Route
+            index
+            element={
+              <Suspense fallback={<Loading />}>
+                <p>test</p>
+              </Suspense>
+            }
+          />
+        </Route>
         <Route
           path="/*"
           element={
