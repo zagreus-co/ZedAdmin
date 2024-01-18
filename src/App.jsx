@@ -19,7 +19,15 @@ function App() {
             index
             element={
               <Suspense fallback={<Loading />}>
-                <p>test</p>
+                <p>Dashboard</p>
+              </Suspense>
+            }
+          />
+          <Route
+            path="/test"
+            element={
+              <Suspense fallback={<Loading />}>
+                <p>Test</p>
               </Suspense>
             }
           />

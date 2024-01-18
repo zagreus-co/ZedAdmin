@@ -6,10 +6,13 @@ const DashboardLayout = () => {
     <>
       <SideBar />
 
-      <div className="ml-auto w-[calc(100%_-_350px)]">
-        <header className={"bg-accent p-4"}>this is a header</header>
-        <Outlet />
-      </div>
+      <main className="ml-auto w-[calc(100%_-_350px)]">
+        <header className={"p-4"}>Header</header>
+
+        <section className="p-4">
+          <Outlet />
+        </section>
+      </main>
     </>
   );
 };

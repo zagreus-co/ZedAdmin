@@ -24,6 +24,25 @@
     @apply m-0 p-0 box-border;
   }
 
+  h1 {
+    @apply text-[2rem] sm:text-[2.3rem] md:text-[2.8rem] lg:text-[3.2rem] xl:text-5xl lg:!leading-[4rem];
+  }
+  h2 {
+    @apply text-[1.9rem] sm:text-[2.3rem] lg:text-[2.7rem] xl:text-5xl lg:!leading-[3.9rem];
+  }
+  h3 {
+    @apply text-[1.7rem] sm:text-[2rem] lg:text-[2.4rem] xl:text-4xl;
+  }
+  h4 {
+    @apply text-[1.3rem] sm:text-[1.6rem] lg:text-[1.6rem] xl:text-3xl;
+  }
+  h5 {
+    @apply text-[1.1rem] sm:text-[1.3rem] lg:text-[1.4rem] xl:text-2xl;
+  }
+  h6 {
+    @apply text-[1rem] sm:text-[1.1rem] xl:text-xl;
+  }
+
   body {
     direction: ltr;
     font-family: "Lato";
