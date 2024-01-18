@@ -48,3 +48,13 @@
     font-family: "Lato";
   }
 }
+.sidebar * {
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar {
+  height: 0.4em;
+  width: 0.4em;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #a9a9a9;
+}

@@ -1,14 +1,21 @@
 import React from "react";
 import GradientShape from "./GradientShape";
 import CategoryTitle from "./CategoryTitle";
+import { NavLink } from "react-router-dom";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { GiTestTubes } from "react-icons/gi";
 
 const SideBar = () => {
   const brandName = <>ZedAdmin</>;
+  const navStyles =
+    " py-3 px-3 rounded-xl border border-transparent flex items-center font-semibold text-[16.5px] gap-x-2 text-[var(--fallback-bc,oklch(var(--bc)/.7))]";
+  const activeNavStyles =
+    "bg-[#fff] shadow-[inset_-11px_0px_15px_0_#f2f2f24d] border-white text-primary";
 
   return (
-    <aside className=" h-screen fixed left-0 top-0 bottom-0 w-[350px] z-[99] overflow-hidden">
-      <div className=" relative z-[99] h-screen border-r-2 border-secondary-content border-opacity-15 p-5">
-        <div className="flex justify-between items-center">
+    <aside className="sidebar h-screen fixed left-0 top-0 bottom-0 w-[350px] z-[99] overflow-hidden">
+      <div className=" relative z-[99] h-screen border-r-2 border-secondary-content border-opacity-15 py-5">
+        <div className="flex justify-between items-center px-5">
           <h1 className="text-2xl font-extrabold">
             {brandName}
             <span className="text-primary">.</span>
@@ -50,11 +57,328 @@ const SideBar = () => {
           </button>
         </div>
 
-        <ul>
-          <li>
+        <div className="px-5 space-y-20 mt-8 h-[calc(100vh_-_250px)] mb-auto overflow-x-hidden overflow-y-auto">
+          <div>
             <CategoryTitle title={"main"} />
-          </li>
-        </ul>
+            <ul className="grid grid-col-1 gap-y-4">
+              <li>
+                <NavLink
+                  to="/"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <LuLayoutDashboard className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Dashboard
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <CategoryTitle title={"records"} />
+            <ul className="grid grid-col-1 gap-y-4">
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <CategoryTitle title={"records"} />
+            <ul className="grid grid-col-1 gap-y-4">
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/test"
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? `${navStyles}`
+                      : isActive
+                      ? `${navStyles} ${activeNavStyles}`
+                      : `${navStyles}`
+                  }
+                  end
+                >
+                  <GiTestTubes className="text-[22px]" />
+                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
+                    Test
+                  </span>
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="fixed bottom-3 left-0 w-[350px] px-5 z-99">
+          <div className="bg-white rounded-xl flex p-3 gap-4 items-center">
+            <img
+              src="/images/profile.jpg"
+              className="w-[70px] h-[70px] rounded-full object-cover"
+              alt=""
+            />
+            <div>
+              <b className="block text-lg">Salar SR</b>
+              <span className="text-[var(--fallback-bc,oklch(var(--bc)/.7))]">
+                salar@gmail.com
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <GradientShape />

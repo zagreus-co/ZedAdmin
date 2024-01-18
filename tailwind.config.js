@@ -12,7 +12,7 @@ export default {
     extend: {},
   },
   daisyui: {
-    themes: ["dark"],
+    themes: ["light"],
   },
   plugins: [require("daisyui")],
 };
