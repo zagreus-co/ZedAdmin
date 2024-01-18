@@ -6,8 +6,8 @@ const DashboardLayout = () => {
     <>
       <SideBar />
 
-      <div className="ml-auto w-[calc(100%_-_300px)]">
-        <header className={"bg-gray-300 p-4"}>this is a header</header>
+      <div className="ml-auto w-[calc(100%_-_350px)]">
+        <header className={"bg-accent p-4"}>this is a header</header>
         <Outlet />
       </div>
     </>
