@@ -11,7 +11,7 @@ const DashboardLayout = () => {
 
       <main
         className={`ml-auto ${
-          menuSize && "!w-[calc(100%_-_90px)]"
+          menuSize && "!w-[calc(100%_-_100px)]"
         } w-[calc(100%_-_350px)] transition-all ease-in-out duration-300`}
       >
         <header className={"p-4"}>Header</header>

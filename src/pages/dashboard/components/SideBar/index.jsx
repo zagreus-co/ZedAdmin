@@ -14,9 +14,9 @@ const SideBar = ({ menuSize = false, setMenuSize = null }) => {
     " py-3 px-5 rounded-xl border border-transparent flex items-center font-semibold text-[16.5px] gap-x-2 text-[var(--fallback-bc,oklch(var(--bc)/.7))] transition-all ease-in-out duration-300";
   const activeNavStyles = ` ${
     !menuSize
-      ? " shadow-[inset_-11px_0px_15px_0_#f2f2f24d] border-white"
+      ? " border-[var(--fallback-b1,oklch(var(--b1)/0.2))]"
       : "!bg-transparent"
-  }   text-primary bg-[#fff]`;
+  }   text-primary bg-[var(--fallback-b1,oklch(var(--b1)/1))]`;
 
   return (
     <aside
@@ -125,7 +125,7 @@ const SideBar = ({ menuSize = false, setMenuSize = null }) => {
         >
           <div
             className={` rounded-xl p-3 gap-4 items-center w-[310px] whitespace-nowrap overflow-hidden ${
-              menuSize ? "!w-[65px]" : "bg-white"
+              menuSize ? "!w-[65px]" : "bg-[var(--fallback-b1,oklch(var(--b1)/1))]"
             }  transition-all ease-in-out duration-300`}
           >
             <div className="inline-block align-middle">
