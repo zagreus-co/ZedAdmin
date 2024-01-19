@@ -1,26 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import GradientShape from "./GradientShape";
 import CategoryTitle from "./CategoryTitle";
 import { NavLink } from "react-router-dom";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { GiTestTubes } from "react-icons/gi";
 
-const SideBar = () => {
+const SideBar = ({ menuSize = false, setMenuSize = null }) => {
+  // brand's name
   const brandName = <>ZedAdmin</>;
+
+  // Nav links styles
   const navStyles =
-    " py-3 px-3 rounded-xl border border-transparent flex items-center font-semibold text-[16.5px] gap-x-2 text-[var(--fallback-bc,oklch(var(--bc)/.7))]";
-  const activeNavStyles =
-    "bg-[#fff] shadow-[inset_-11px_0px_15px_0_#f2f2f24d] border-white text-primary";
+    " py-3 px-5 rounded-xl border border-transparent flex items-center font-semibold text-[16.5px] gap-x-2 text-[var(--fallback-bc,oklch(var(--bc)/.7))] transition-all ease-in-out duration-300";
+  const activeNavStyles = ` ${
+    !menuSize
+      ? " shadow-[inset_-11px_0px_15px_0_#f2f2f24d] border-white"
+      : "!bg-transparent"
+  }   text-primary bg-[#fff]`;
 
   return (
-    <aside className="sidebar h-screen fixed left-0 top-0 bottom-0 w-[350px] z-[99] overflow-hidden">
+    <aside
+      className={`sidebar h-screen fixed left-0 top-0 bottom-0 ${
+        menuSize && "!w-[100px] sidebar-closed"
+      } w-[350px] z-[99] overflow-hidden transition-all ease-in-out duration-300`}
+    >
       <div className=" relative z-[99] h-screen border-r-2 border-secondary-content border-opacity-15 py-5">
         <div className="flex justify-between items-center px-5">
-          <h1 className="text-2xl font-extrabold">
+          <h1 className="text-2xl font-extrabold delay-100 duration-200">
             {brandName}
             <span className="text-primary">.</span>
           </h1>
-          <button type="button">
+          <button
+            type="button"
+            className={`${
+              menuSize && "rotate-[180deg]"
+            } absolute right-[33px] transition-all ease-in-out duration-300`}
+            onClick={() => {
+              setMenuSize(!menuSize);
+            }}
+          >
             <svg
               className="w-[25px] h-auto "
               width="36"
@@ -97,281 +115,27 @@ const SideBar = () => {
                   </span>
                 </NavLink>
               </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <CategoryTitle title={"records"} />
-            <ul className="grid grid-col-1 gap-y-4">
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <CategoryTitle title={"records"} />
-            <ul className="grid grid-col-1 gap-y-4">
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/test"
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? `${navStyles}`
-                      : isActive
-                      ? `${navStyles} ${activeNavStyles}`
-                      : `${navStyles}`
-                  }
-                  end
-                >
-                  <GiTestTubes className="text-[22px]" />
-                  <span className="text-[var(--fallback-bc,oklch(var(--bc)/.8))]">
-                    Test
-                  </span>
-                </NavLink>
-              </li>
             </ul>
           </div>
         </div>
-        <div className="fixed bottom-3 left-0 w-[350px] px-5 z-99">
-          <div className="bg-white rounded-xl flex p-3 gap-4 items-center">
-            <img
-              src="/images/profile.jpg"
-              className="w-[70px] h-[70px] rounded-full object-cover"
-              alt=""
-            />
-            <div>
+        <div
+          className={`fixed bottom-3 left-0  ${
+            menuSize && "!w-[90px]"
+          } w-[350px] overflow-hidden transition-all ease-in-out duration-300 px-5 z-99`}
+        >
+          <div
+            className={` rounded-xl p-3 gap-4 items-center w-[310px] whitespace-nowrap overflow-hidden ${
+              menuSize ? "!w-[65px]" : "bg-white"
+            }  transition-all ease-in-out duration-300`}
+          >
+            <div className="inline-block align-middle">
+              <img
+                src="/images/profile.jpg"
+                className="w-[40px] h-[40px] rounded-full object-cover"
+                alt=""
+              />
+            </div>
+            <div className="inline-block align-middle ml-4">
               <b className="block text-lg">Salar SR</b>
               <span className="text-[var(--fallback-bc,oklch(var(--bc)/.7))]">
                 salar@gmail.com

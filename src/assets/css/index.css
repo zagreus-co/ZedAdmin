@@ -58,3 +58,12 @@
 ::-webkit-scrollbar-thumb {
   background-color: #a9a9a9;
 }
+.sidebar-closed span {
+  @apply opacity-0;
+}
+.sidebar-closed h1 {
+  @apply opacity-0 delay-0 duration-0;
+}
+.sidebar-closed b {
+  @apply opacity-0;
+}
