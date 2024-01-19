@@ -12,7 +12,7 @@ export default {
     extend: {},
   },
   daisyui: {
-    themes: ["dracula"], // light dark cupcake halloween night sunset dracula
+    themes: ["dracula"], //dark cupcake halloween winter night pastel sunset dracula light
   },
   plugins: [require("daisyui")],
 };

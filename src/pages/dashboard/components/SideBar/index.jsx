@@ -125,7 +125,9 @@ const SideBar = ({ menuSize = false, setMenuSize = null }) => {
         >
           <div
             className={` rounded-xl p-3 gap-4 items-center w-[310px] whitespace-nowrap overflow-hidden ${
-              menuSize ? "!w-[65px]" : "bg-[var(--fallback-b1,oklch(var(--b1)/1))]"
+              menuSize
+                ? "!w-[65px]"
+                : "bg-[var(--fallback-b1,oklch(var(--b1)/1))]"
             }  transition-all ease-in-out duration-300`}
           >
             <div className="inline-block align-middle">
